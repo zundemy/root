@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export const metadata: Metadata = {
 	title: "bolt tutorial",
@@ -19,7 +19,15 @@ export default function RootLayout({
 				<SidebarProvider>
 					<div className="flex min-h-screen">
 						<AppSidebar />
-						<main className="flex-1 p-4">{children}</main>
+						<main className="flex-1 p-4">
+							<header className="flex items-center space-x-2">
+								<SidebarTrigger />
+								<span className="text-2xl font-bold">
+									Computer Literacy 2025
+								</span>
+							</header>
+							<div className="p-2">{children}</div>
+						</main>
 					</div>
 				</SidebarProvider>
 			</body>
