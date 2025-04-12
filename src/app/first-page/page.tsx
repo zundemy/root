@@ -2,32 +2,32 @@ import Link from "next/link";
 
 export default function FirstPage() {
 	return (
-		<div className="max-w-4xl mx-auto p-8">
-			<h1 className="text-3xl font-bold mb-8">4. 最初のWebページを作成</h1>
+		<div className="mx-auto max-w-4xl p-8">
+			<h1 className="mb-8 font-bold text-3xl">4. 最初のWebページを作成</h1>
 
 			<div className="space-y-6">
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">
+					<h2 className="mb-4 font-semibold text-2xl">
 						Vite + HTML/CSSプロジェクトの作成
 					</h2>
-					<ol className="list-decimal pl-6 space-y-4">
+					<ol className="list-decimal space-y-4 pl-6">
 						<li>プロジェクト作成画面で「Create a new project」を選択</li>
 						<li>
 							プロンプトに以下を入力：
-							<pre className="bg-gray-100 p-4 rounded mt-2">
+							<pre className="mt-2 rounded bg-gray-100 p-4">
 								Viteプロジェクトを作成してください。HTMLとCSSのみを使用したシンプルなランディングページを作成します。
 							</pre>
 						</li>
 						<li>
 							AIが生成したコードを確認
-							<ul className="list-disc pl-4 mt-2 text-gray-600">
+							<ul className="mt-2 list-disc pl-4 text-gray-600">
 								<li>生成されたコードの構造を理解しましょう</li>
 								<li>HTMLとCSSの基本的な構造を確認しましょう</li>
 							</ul>
 						</li>
 						<li>
 							プレビューで表示を確認
-							<ul className="list-disc pl-4 mt-2 text-gray-600">
+							<ul className="mt-2 list-disc pl-4 text-gray-600">
 								<li>リアルタイムで変更が反映されることを確認しましょう</li>
 								<li>レスポンシブデザインの動作を確認しましょう</li>
 							</ul>
@@ -36,11 +36,11 @@ export default function FirstPage() {
 				</section>
 
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">生成されたコードの例</h2>
+					<h2 className="mb-4 font-semibold text-2xl">生成されたコードの例</h2>
 					<div className="space-y-4">
 						<div>
-							<h3 className="font-semibold mb-2">HTML</h3>
-							<pre className="bg-gray-100 p-4 rounded overflow-x-auto">
+							<h3 className="mb-2 font-semibold">HTML</h3>
+							<pre className="overflow-x-auto rounded bg-gray-100 p-4">
 								{`<!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -60,8 +60,8 @@ export default function FirstPage() {
 							</pre>
 						</div>
 						<div>
-							<h3 className="font-semibold mb-2">CSS</h3>
-							<pre className="bg-gray-100 p-4 rounded overflow-x-auto">
+							<h3 className="mb-2 font-semibold">CSS</h3>
+							<pre className="overflow-x-auto rounded bg-gray-100 p-4">
 								{`body {
   font-family: sans-serif;
   margin: 0;
@@ -82,7 +82,7 @@ h1 {
 					</div>
 				</section>
 
-				<div className="flex justify-between mt-8">
+				<div className="mt-8 flex justify-between">
 					<Link
 						href="/tutorial/getting-started"
 						className="text-blue-500 hover:underline"

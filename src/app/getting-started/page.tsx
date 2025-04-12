@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function GettingStartedPage() {
 	return (
-		<div className="max-w-4xl mx-auto p-8">
-			<h1 className="text-3xl font-bold mb-8">3. Bolt.newの始め方</h1>
+		<div className="mx-auto max-w-4xl p-8">
+			<h1 className="mb-8 font-bold text-3xl">3. Bolt.newの始め方</h1>
 
 			<div className="space-y-6">
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">アカウント作成手順</h2>
-					<ol className="list-decimal pl-6 space-y-4">
+					<h2 className="mb-4 font-semibold text-2xl">アカウント作成手順</h2>
+					<ol className="list-decimal space-y-4 pl-6">
 						<li>
 							<a
 								href="https://bolt.new"
@@ -23,7 +23,7 @@ export default function GettingStartedPage() {
 						<li>「Get Started」ボタンをクリック</li>
 						<li>
 							Googleアカウントでサインアップ
-							<ul className="list-disc pl-4 mt-2 text-gray-600">
+							<ul className="mt-2 list-disc pl-4 text-gray-600">
 								<li>
 									Googleアカウントをお持ちでない場合は、新規作成が必要です
 								</li>
@@ -35,15 +35,15 @@ export default function GettingStartedPage() {
 				</section>
 
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">注意点</h2>
-					<ul className="list-disc pl-6 space-y-2">
+					<h2 className="mb-4 font-semibold text-2xl">注意点</h2>
+					<ul className="list-disc space-y-2 pl-6">
 						<li>Googleアカウントは必須です</li>
 						<li>ブラウザは最新版を使用することを推奨します</li>
 						<li>インターネット接続が必要です</li>
 					</ul>
 				</section>
 
-				<div className="flex justify-between mt-8">
+				<div className="mt-8 flex justify-between">
 					<Link
 						href="/tutorial/bolt-intro"
 						className="text-blue-500 hover:underline"

@@ -22,7 +22,7 @@ export default function RootLayout({
 						<main className="flex-1 p-4">
 							<header className="flex items-center space-x-2">
 								<SidebarTrigger />
-								<span className="text-2xl font-bold">
+								<span className="font-bold text-2xl">
 									Computer Literacy 2025
 								</span>
 							</header>

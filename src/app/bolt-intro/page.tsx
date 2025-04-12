@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function BoltIntroPage() {
 	return (
-		<div className="max-w-4xl mx-auto p-8">
-			<h1 className="text-3xl font-bold mb-8">2. Bolt.newとは</h1>
+		<div className="mx-auto max-w-4xl p-8">
+			<h1 className="mb-8 font-bold text-3xl">2. Bolt.newとは</h1>
 
 			<div className="space-y-6">
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">
+					<h2 className="mb-4 font-semibold text-2xl">
 						なぜBolt.newを使うのか
 					</h2>
-					<ul className="list-disc pl-6 space-y-2">
+					<ul className="list-disc space-y-2 pl-6">
 						<li>ブラウザ上で完結する開発環境</li>
 						<li>AIアシスタントがコードを提案・生成</li>
 						<li>リアルタイムで変更を確認可能</li>
@@ -20,8 +20,8 @@ export default function BoltIntroPage() {
 				</section>
 
 				<section>
-					<h2 className="text-2xl font-semibold mb-4">主な機能</h2>
-					<ul className="list-disc pl-6 space-y-2">
+					<h2 className="mb-4 font-semibold text-2xl">主な機能</h2>
+					<ul className="list-disc space-y-2 pl-6">
 						<li>WebContainersによる完全な開発環境</li>
 						<li>チャットベースのAIアシスタント</li>
 						<li>Netlifyとの統合による簡単なデプロイ</li>
@@ -30,7 +30,7 @@ export default function BoltIntroPage() {
 					</ul>
 				</section>
 
-				<div className="flex justify-between mt-8">
+				<div className="mt-8 flex justify-between">
 					<Link
 						href="/tutorial/introduction"
 						className="text-blue-500 hover:underline"

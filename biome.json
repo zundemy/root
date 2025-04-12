@@ -3,5 +3,19 @@
 	"files": {
 		"ignoreUnknown": false,
 		"ignore": ["node_modules/**/*", ".next/**/*", "out/**/*"]
+	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "warn"
+			},
+			"nursery": {
+				"useSortedClasses": "warn"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
 	}
 }
