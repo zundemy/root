@@ -1,4 +1,4 @@
-import { Code } from "@/components/code";
+import { CodeBlock } from "@/components/code-block";
 
 export default function Page() {
 	return (
@@ -47,17 +47,16 @@ export default function Page() {
 							<p>
 								以下のプロンプトをコピーして、Bolt.newのプロンプト入力欄に貼り付けてください：
 							</p>
-							<Code
-								code={`
-\`\`\`txt
-以下の条件を満たすWebサイトを作成してください
-- viteを使用し、index.html, style.cssのみでjavascriptは使用しないシンプルな構成にしてください。
-- htmlにlinkタグを追加してstyle.cssを読み込んでください。
-- クラシックで落ち着いた雰囲気の喫茶店のサイトを作成してください。
-- コンセプト、お知らせ、メニュー、お問い合わせのセクションを入れてください。
-- 適度に画像を使用してください。
-\`\`\`
-								`}
+							<CodeBlock
+								lang="md"
+								code={[
+									"以下の条件を満たすWebサイトを作成してください",
+									"- viteを使用し、index.html, style.cssのみでjavascriptは使用しないシンプルな構成にしてください。",
+									"- htmlにlinkタグを追加してstyle.cssを読み込んでください。",
+									"- クラシックで落ち着いた雰囲気の喫茶店のサイトを作成してください。",
+									"- コンセプト、お知らせ、メニュー、お問い合わせのセクションを入れてください。",
+									"- 適度に画像を使用してください。",
+								].join("\n")}
 							/>
 						</div>
 					</li>
