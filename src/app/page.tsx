@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<div className="flex h-full flex-col items-center justify-center space-y-8">
-			<div>
-				<p>このサイトの説明文を入れる。</p>
-				<p>このサイトの説明文を入れる。</p>
+			<div className="text-center leading-8">
+				<p>コンピューターリテラシー(2025) 第12回 ~ 第14回の授業資料です。</p>
+				<p>生成AIを使用してwebサイトを作成してみましょう。</p>
 			</div>
 			<Button size="lg" className="w-28" asChild>
 				<Link href="/introduction">始める</Link>
