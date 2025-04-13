@@ -71,7 +71,7 @@ export default async function RootLayout({
 		<html lang="ja" className="dark bg-neutral-900">
 			<body>
 				<SidebarProvider>
-					<div className="flex min-h-screen flex-1">
+					<div className="flex min-h-svh flex-1">
 						<AppSidebar menuItems={menuItems} />
 						<div className="flex flex-1 flex-col">
 							<AppHeader />
