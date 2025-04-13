@@ -8,15 +8,12 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import Link from "next/link";
 
 const menuItems = [
 	{
-		title: "Home",
-		url: "#",
-	},
-	{
-		title: "Inbox",
-		url: "#",
+		title: "やること",
+		url: "/introduction",
 	},
 	{
 		title: "Calendar",
@@ -43,12 +40,12 @@ export function AppSidebar() {
 							{menuItems.map((item, number) => (
 								<SidebarMenuItem key={item.title}>
 									<SidebarMenuButton asChild>
-										<a href={item.url}>
+										<Link href={item.url}>
 											<span className="flex h-4 w-4 shrink-0 items-center justify-center">
 												{number + 1}
 											</span>
 											<span>{item.title}</span>
-										</a>
+										</Link>
 									</SidebarMenuButton>
 								</SidebarMenuItem>
 							))}
