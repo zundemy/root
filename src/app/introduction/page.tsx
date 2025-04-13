@@ -1,7 +1,7 @@
 export default function Page() {
 	return (
 		<div className="space-y-8">
-			<h1 className="font-bold text-4xl">コンピューターリテラシー 2025</h1>
+			<h1>コンピューターリテラシー 2025</h1>
 
 			<section className="space-y-4">
 				<h2 className="font-semibold text-2xl">最終課題について</h2>
