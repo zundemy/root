@@ -1,152 +1,44 @@
 export default function Page() {
 	return (
-		<div>
-			<h1 className="mb-8 font-bold text-3xl">1. HTMLとCSSの簡単な紹介</h1>
+		<div className="space-y-8">
+			<h1 className="font-bold text-4xl">コンピューターリテラシー 2025</h1>
 
-			<div className="space-y-6">
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">HTMLとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの構造を定義する言語</li>
-						<li>タグを使って要素を配置</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">
-								&lt;h1&gt;見出し&lt;/h1&gt;
-							</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								&lt;p&gt;段落&lt;/p&gt;
-							</code>
-						</li>
-					</ul>
-				</section>
+			<section className="space-y-4">
+				<h2 className="font-semibold text-2xl">最終課題について</h2>
+				<p className="text-lg">
+					この授業では、Webサイトの作成を通じて、コンピューターの基本的な操作とプログラミングの基礎を学びます。
+					最終課題では、自分で作成したWebサイトを公開することが目標です。
+				</p>
+			</section>
 
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
+			<section className="space-y-4">
+				<h2 className="font-semibold text-2xl">最終課題の要件</h2>
+				<ul className="list-disc space-y-2 pl-6">
+					<li>オリジナルのWebサイトを作成する</li>
+					<li>HTML、CSS、JavaScriptを使用する</li>
+					<li>レスポンシブデザインに対応する</li>
+					<li>Webサイトを公開する</li>
+				</ul>
+			</section>
 
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2 className="mb-4 font-semibold text-2xl">CSSとは</h2>
-					<ul className="list-disc space-y-2 pl-6">
-						<li>Webページの見た目を装飾する言語</li>
-						<li>色、サイズ、レイアウトなどを指定</li>
-						<li>
-							例：
-							<code className="rounded bg-gray-100 px-2 py-1">color: red;</code>
-							,{" "}
-							<code className="rounded bg-gray-100 px-2 py-1">
-								font-size: 16px;
-							</code>
-						</li>
-					</ul>
-				</section>
-			</div>
+			<section className="space-y-4">
+				<h2 className="font-semibold text-2xl">使用するツール</h2>
+				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
+					<h3 className="mb-2 font-semibold text-xl">Bolt.new</h3>
+					<p className="text-gray-700">
+						Bolt.newは、AIを活用したWebサイト作成ツールです。
+						プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
+					</p>
+					<a
+						href="https://bolt.new"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="mt-2 inline-block text-blue-500 hover:underline"
+					>
+						Bolt.newの公式サイトへ
+					</a>
+				</div>
+			</section>
 		</div>
 	);
 }

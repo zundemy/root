@@ -14,18 +14,51 @@ const menuItems = [
 	{
 		label: "やること",
 		url: "/introduction",
+		// 最終課題の要件
+		// 最終課題のサンプルを提示
+		// 使用するツールの説明 (Bolt.new)
 	},
 	{
-		label: "Getting Started",
-		url: "/getting-started",
+		label: "webサイトを作る",
+		url: "getting-started",
+		// https://bolt.new/ にアクセス
+		// アカウント作成
+		// サンプルのプロンプトをコピペで実行
+		// 自由にカスタマイズしてみる
 	},
 	{
-		label: "Search",
-		url: "#",
+		label: "webサイトを公開する",
+		url: "publish",
+		// https://bolt.new/ にアクセス
+		// アカウント作成
+		// サンプルのプロンプトをコピペで実行
+		// 自由にカスタマイズしてみる
 	},
 	{
-		label: "Settings",
-		url: "#",
+		label: "HTMLを編集する",
+		url: "html",
+		// htmlの構造を説明
+		// aタグ
+		// imgタグ
+		// inputタグ
+		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/HTML/Reference
+	},
+	{
+		label: "CSSを編集する",
+		url: "css",
+		// cssの構造を説明
+		// background-colorを変えてみる
+		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/CSS/Reference
+	},
+	{
+		label: "JavaScriptを編集する",
+		url: "javascript",
+		// JavaScriptの構造を説明
+		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference
+	},
+	{
+		label: "もっと学びたい人へ",
+		url: "advanced",
 	},
 ];
 
