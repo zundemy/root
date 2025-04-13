@@ -1,3 +1,5 @@
+"use client";
+
 import {
 	Sidebar,
 	SidebarContent,
@@ -9,27 +11,17 @@ import {
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const menuItems = [
-	{
-		title: "やること",
-		url: "/introduction",
-	},
-	{
-		title: "Calendar",
-		url: "#",
-	},
-	{
-		title: "Search",
-		url: "#",
-	},
-	{
-		title: "Settings",
-		url: "#",
-	},
-];
+type AppSidebarProps = {
+	menuItems: {
+		label: string;
+		url: string;
+	}[];
+};
 
-export function AppSidebar() {
+export function AppSidebar({ menuItems }: AppSidebarProps) {
+	const pathname = usePathname();
 	return (
 		<Sidebar>
 			<SidebarContent>
@@ -38,13 +30,13 @@ export function AppSidebar() {
 					<SidebarGroupContent>
 						<SidebarMenu>
 							{menuItems.map((item, number) => (
-								<SidebarMenuItem key={item.title}>
-									<SidebarMenuButton asChild>
+								<SidebarMenuItem key={item.label}>
+									<SidebarMenuButton asChild isActive={pathname === item.url}>
 										<Link href={item.url}>
 											<span className="flex h-4 w-4 shrink-0 items-center justify-center">
 												{number + 1}
 											</span>
-											<span>{item.title}</span>
+											<span>{item.label}</span>
 										</Link>
 									</SidebarMenuButton>
 								</SidebarMenuItem>

@@ -1,8 +1,6 @@
-import Link from "next/link";
-
-export default function GettingStartedPage() {
+export default function Page() {
 	return (
-		<div className="mx-auto max-w-4xl p-8">
+		<div>
 			<h1 className="mb-8 font-bold text-3xl">3. Bolt.newの始め方</h1>
 
 			<div className="space-y-6">
@@ -42,21 +40,6 @@ export default function GettingStartedPage() {
 						<li>インターネット接続が必要です</li>
 					</ul>
 				</section>
-
-				<div className="mt-8 flex justify-between">
-					<Link
-						href="/tutorial/bolt-intro"
-						className="text-blue-500 hover:underline"
-					>
-						← 前の章へ
-					</Link>
-					<Link
-						href="/tutorial/first-page"
-						className="text-blue-500 hover:underline"
-					>
-						次の章へ →
-					</Link>
-				</div>
 			</div>
 		</div>
 	);
