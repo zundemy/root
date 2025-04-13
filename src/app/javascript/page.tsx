@@ -1,25 +1,25 @@
 export default function Page() {
 	return (
-		<div className="space-y-8">
-			<h1 className="font-bold text-4xl">JavaScriptを編集する</h1>
+		<article>
+			<h1>JavaScriptを編集する</h1>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">JavaScriptとは</h2>
-				<p className="text-lg">
+			<section>
+				<h2>JavaScriptとは</h2>
+				<p>
 					JavaScriptは、Webページに動的な機能を追加するためのプログラミング言語です。
 					ユーザーの操作に応じてコンテンツを変更したり、アニメーションを追加したりすることができます。
 				</p>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">基本的なJavaScriptの機能</h2>
+			<section>
+				<h2>基本的なJavaScriptの機能</h2>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">変数とデータ型</h3>
-					<p className="text-gray-700">
+				<div>
+					<h3>変数とデータ型</h3>
+					<p>
 						データを保存するための変数と、そのデータの種類について学びます。
 					</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
+					<pre>
 						{`// 文字列
 let name = "山田太郎";
 
@@ -41,12 +41,10 @@ let person = {
 					</pre>
 				</div>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">関数</h3>
-					<p className="text-gray-700">
-						特定の処理をまとめて実行するための関数について学びます。
-					</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
+				<div>
+					<h3>関数</h3>
+					<p>特定の処理をまとめて実行するための関数について学びます。</p>
+					<pre>
 						{`// 関数の定義
 function greet(name) {
   return "こんにちは、" + name + "さん！";
@@ -58,12 +56,10 @@ console.log(message); // "こんにちは、山田さん！"`}
 					</pre>
 				</div>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">イベント処理</h3>
-					<p className="text-gray-700">
-						ユーザーの操作に応じて処理を実行する方法について学びます。
-					</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
+				<div>
+					<h3>イベント処理</h3>
+					<p>ユーザーの操作に応じて処理を実行する方法について学びます。</p>
+					<pre>
 						{`// ボタンがクリックされたときの処理
 document.getElementById("myButton").addEventListener("click", function() {
   alert("ボタンがクリックされました！");
@@ -72,9 +68,9 @@ document.getElementById("myButton").addEventListener("click", function() {
 				</div>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">参考資料</h2>
-				<p className="text-lg">
+			<section>
+				<h2>参考資料</h2>
+				<p>
 					JavaScriptについてもっと詳しく知りたい方は、以下のMDN Web
 					Docsを参考にしてください：
 				</p>
@@ -82,11 +78,10 @@ document.getElementById("myButton").addEventListener("click", function() {
 					href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="mt-2 block text-blue-500 hover:underline"
 				>
 					MDN Web Docs - JavaScript リファレンス
 				</a>
 			</section>
-		</div>
+		</article>
 	);
 }

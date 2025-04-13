@@ -1,19 +1,29 @@
 export default function Page() {
 	return (
-		<div className="space-y-8">
-			<h1>コンピューターリテラシー 2025</h1>
+		<article>
+			<h1>やること</h1>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">最終課題について</h2>
-				<p className="text-lg">
+			<section>
+				<h2>授業コンセプト</h2>
+				<p>1年生向けの授業なので、以下のコンセプトで内容を作成しています。</p>
+				<ul>
+					<li>難しい話はしない</li>
+					<li>web業界の仕事に興味を持ってもらう</li>
+					<li>どの学類志望の人でも実践で使える内容にする</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>最終課題について</h2>
+				<p>
 					この授業では、Webサイトの作成を通じて、コンピューターの基本的な操作とプログラミングの基礎を学びます。
 					最終課題では、自分で作成したWebサイトを公開することが目標です。
 				</p>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">最終課題の要件</h2>
-				<ul className="list-disc space-y-2 pl-6">
+			<section>
+				<h2>最終課題の要件</h2>
+				<ul>
 					<li>オリジナルのWebサイトを作成する</li>
 					<li>HTML、CSS、JavaScriptを使用する</li>
 					<li>レスポンシブデザインに対応する</li>
@@ -21,24 +31,19 @@ export default function Page() {
 				</ul>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">使用するツール</h2>
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">Bolt.new</h3>
-					<p className="text-gray-700">
+			<section>
+				<h2>使用するツール</h2>
+				<div>
+					<h3>Bolt.new</h3>
+					<p>
 						Bolt.newは、AIを活用したWebサイト作成ツールです。
 						プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
 					</p>
-					<a
-						href="https://bolt.new"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="mt-2 inline-block text-blue-500 hover:underline"
-					>
+					<a href="https://bolt.new" target="_blank" rel="noopener noreferrer">
 						Bolt.newの公式サイトへ
 					</a>
 				</div>
 			</section>
-		</div>
+		</article>
 	);
 }

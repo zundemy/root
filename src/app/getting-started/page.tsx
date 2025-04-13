@@ -1,30 +1,27 @@
 export default function Page() {
 	return (
-		<div className="space-y-8">
-			<h1 className="font-bold text-4xl">Webサイトを作る</h1>
+		<article>
+			<h1>Webサイトを作る</h1>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">Bolt.newを使ってみよう</h2>
-				<p className="text-lg">
+			<section>
+				<h2>Bolt.newを使ってみよう</h2>
+				<p>
 					Bolt.newは、AIを活用したWebサイト作成ツールです。
 					プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
 				</p>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">手順</h2>
-				<ol className="list-decimal space-y-4 pl-6">
+			<section>
+				<h2>手順</h2>
+				<ol>
 					<li>
-						<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-							<h3 className="mb-2 font-semibold text-xl">
-								1. Bolt.newにアクセス
-							</h3>
-							<p className="text-gray-700">
+						<div>
+							<h3>1. Bolt.newにアクセス</h3>
+							<p>
 								<a
 									href="https://bolt.new"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-blue-500 hover:underline"
 								>
 									https://bolt.new
 								</a>
@@ -34,23 +31,21 @@ export default function Page() {
 					</li>
 
 					<li>
-						<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-							<h3 className="mb-2 font-semibold text-xl">2. アカウント作成</h3>
-							<p className="text-gray-700">
+						<div>
+							<h3>2. アカウント作成</h3>
+							<p>
 								Googleアカウントまたはメールアドレスでアカウントを作成してください。
 							</p>
 						</div>
 					</li>
 
 					<li>
-						<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-							<h3 className="mb-2 font-semibold text-xl">
-								3. サンプルプロンプトを実行
-							</h3>
-							<p className="text-gray-700">
+						<div>
+							<h3>3. サンプルプロンプトを実行</h3>
+							<p>
 								以下のプロンプトをコピーして、Bolt.newのプロンプト入力欄に貼り付けてください：
 							</p>
-							<pre className="mt-2 rounded bg-gray-100 p-4">
+							<pre>
 								{`シンプルでモダンなポートフォリオサイトを作成してください。
 以下の要素を含めてください：
 - 自己紹介
@@ -67,13 +62,13 @@ export default function Page() {
 					</li>
 
 					<li>
-						<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-							<h3 className="mb-2 font-semibold text-xl">4. カスタマイズ</h3>
-							<p className="text-gray-700">
+						<div>
+							<h3>4. カスタマイズ</h3>
+							<p>
 								生成されたWebサイトを自由にカスタマイズしてみましょう。
 								以下のような変更が可能です：
 							</p>
-							<ul className="mt-2 list-disc pl-6">
+							<ul>
 								<li>色やフォントの変更</li>
 								<li>コンテンツの追加・編集</li>
 								<li>レイアウトの調整</li>
@@ -83,6 +78,6 @@ export default function Page() {
 					</li>
 				</ol>
 			</section>
-		</div>
+		</article>
 	);
 }

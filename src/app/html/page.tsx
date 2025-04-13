@@ -1,79 +1,60 @@
 export default function Page() {
 	return (
-		<div className="space-y-8">
-			<h1 className="font-bold text-4xl">HTMLを編集する</h1>
+		<article>
+			<h1>HTMLを編集する</h1>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">HTMLとは</h2>
-				<p className="text-lg">
+			<section>
+				<h2>HTMLとは</h2>
+				<p>
 					HTML（HyperText Markup
 					Language）は、Webページの構造を定義するための言語です。
 					タグと呼ばれる要素を使って、テキストや画像などのコンテンツを配置します。
 				</p>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">基本的なHTMLタグ</h2>
+			<section>
+				<h2>基本的なHTMLタグ</h2>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">aタグ（リンク）</h3>
-					<p className="text-gray-700">
-						他のページやWebサイトへのリンクを作成します。
-					</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
-						{`<a href="https://example.com">リンクテキスト</a>`}
-					</pre>
-					<p className="mt-2">
+				<div>
+					<h3>aタグ（リンク）</h3>
+					<p>他のページやWebサイトへのリンクを作成します。</p>
+					<pre>{`<a href="https://example.com">リンクテキスト</a>`}</pre>
+					<p>
 						例：
 						<a
 							href="https://example.com"
-							className="text-blue-500 hover:underline"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							リンクテキスト
 						</a>
 					</p>
 				</div>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">imgタグ（画像）</h3>
-					<p className="text-gray-700">画像を表示します。</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
-						{`<img src="画像のURL" alt="代替テキスト">`}
-					</pre>
-					<p className="mt-2">
+				<div>
+					<h3>imgタグ（画像）</h3>
+					<p>画像を表示します。</p>
+					<pre>{`<img src="画像のURL" alt="代替テキスト">`}</pre>
+					<p>
 						例：
-						<img
-							src="https://via.placeholder.com/150"
-							alt="サンプル画像"
-							className="mt-2"
-						/>
+						<img src="https://via.placeholder.com/150" alt="サンプル画像" />
 					</p>
 				</div>
 
-				<div className="rounded-lg border border-gray-200 p-6 shadow-sm">
-					<h3 className="mb-2 font-semibold text-xl">
-						inputタグ（入力フォーム）
-					</h3>
-					<p className="text-gray-700">
-						ユーザーからの入力を受け取るフォームを作成します。
-					</p>
-					<pre className="mt-2 rounded bg-gray-100 p-4">
-						{`<input type="text" placeholder="テキストを入力">`}
-					</pre>
-					<p className="mt-2">
+				<div>
+					<h3>inputタグ（入力フォーム）</h3>
+					<p>ユーザーからの入力を受け取るフォームを作成します。</p>
+					<pre>{`<input type="text" placeholder="テキストを入力">`}</pre>
+					<p>
 						例：
-						<input
-							type="text"
-							placeholder="テキストを入力"
-							className="rounded border p-2"
-						/>
+						<input type="text" placeholder="テキストを入力" />
 					</p>
 				</div>
 			</section>
 
-			<section className="space-y-4">
-				<h2 className="font-semibold text-2xl">参考資料</h2>
-				<p className="text-lg">
+			<section>
+				<h2>参考資料</h2>
+				<p>
 					HTMLについてもっと詳しく知りたい方は、以下のMDN Web
 					Docsを参考にしてください：
 				</p>
@@ -81,11 +62,10 @@ export default function Page() {
 					href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="mt-2 block text-blue-500 hover:underline"
 				>
 					MDN Web Docs - HTML リファレンス
 				</a>
 			</section>
-		</div>
+		</article>
 	);
 }
