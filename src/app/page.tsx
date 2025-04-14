@@ -10,7 +10,9 @@ export default function Page() {
 				<p>生成AIを使用してwebサイトを作成してみましょう。</p>
 			</div>
 			<Button size="lg" className="w-28" asChild>
-				<Link href="/introduction">始める</Link>
+				<Link href="/introduction" className="no-underline">
+					始める
+				</Link>
 			</Button>
 		</div>
 	);
