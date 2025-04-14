@@ -1,3 +1,6 @@
+import boltNewTop from "@/assets/bolt-new-top.png";
+import Image from "next/image";
+
 export default function Page() {
 	return (
 		<article>
@@ -19,10 +22,9 @@ export default function Page() {
 					この授業では、Webサイトの作成を通じて、コンピューターの基本的な操作とプログラミングの基礎を学びます。
 					最終課題では、自分で作成したWebサイトを公開することが目標です。
 				</p>
-			</section>
-
-			<section>
-				<h2>最終課題の要件</h2>
+				{/* TODO: サンプルサイトの画像追加 */}
+				{/* TODO: サンプルサイトのリンク追加 */}
+				<h3>要件</h3>
 				<ul>
 					<li>オリジナルのWebサイトを作成する</li>
 					<li>HTML、CSS、JavaScriptを使用する</li>
@@ -35,13 +37,11 @@ export default function Page() {
 				<h2>使用するツール</h2>
 				<div>
 					<h3>Bolt.new</h3>
+					<Image src={boltNewTop} alt="Bolt.newのトップ画面" />
 					<p>
 						Bolt.newは、AIを活用したWebサイト作成ツールです。
 						プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
 					</p>
-					<a href="https://bolt.new" target="_blank" rel="noopener noreferrer">
-						Bolt.newの公式サイトへ
-					</a>
 				</div>
 			</section>
 		</article>
