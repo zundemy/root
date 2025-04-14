@@ -1,8 +1,10 @@
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
 import { AppSidebar } from "@/components/app-sidebar";
+import { ArticleFooter } from "@/components/article-footer";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -77,8 +79,9 @@ export default async function RootLayout({
 							<AppHeader />
 							<main className="prose prose-neutral dark:prose-invert mx-auto w-full max-w-4xl flex-1 p-8">
 								{children}
+								<ArticleFooter menuItems={menuItems} />
 							</main>
-							<AppFooter menuItems={menuItems} />
+							<AppFooter />
 						</div>
 					</div>
 				</SidebarProvider>
