@@ -80,7 +80,7 @@
 
 .dark {
 	--background: radial-gradient(
-		farthest-corner at 50% 0,
+		farthest-corner at 40% 0,
 		oklch(0.25 0 0),
 		oklch(0 0 0)
 	);
