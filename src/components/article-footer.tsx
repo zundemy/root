@@ -23,7 +23,7 @@ export function ArticleFooter({ menuItems }: ArticleFooterProps) {
 		currentIndex === menuItems.length - 1 ? null : menuItems[currentIndex + 1];
 
 	return (
-		<footer className="flex justify-between p-4">
+		<footer className="flex justify-between">
 			<Button variant="link" disabled={!previousItem}>
 				<ChevronLeft />
 				<FooterLink link={previousItem} />

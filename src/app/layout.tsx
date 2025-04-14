@@ -77,7 +77,7 @@ export default async function RootLayout({
 						<AppSidebar menuItems={menuItems} />
 						<div className="flex min-w-0 flex-1 flex-col">
 							<AppHeader />
-							<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto w-full max-w-4xl flex-1 p-8">
+							<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto w-full max-w-4xl flex-1 space-y-8 p-8">
 								{children}
 								<ArticleFooter menuItems={menuItems} />
 							</main>
