@@ -1,10 +1,14 @@
-import boltNewTop from "@/assets/bolt-new-top.png";
+import taiwaCoffee from "@/assets/taiwa-coffee.png";
 import Image from "next/image";
 
 export default function Page() {
 	return (
 		<article>
 			<h1>やること</h1>
+
+			<p>
+				この授業では、生成AIを使用してWebサイトを作成 + 公開する方法を学びます。
+			</p>
 
 			<section>
 				<h2>授業コンセプト</h2>
@@ -18,31 +22,27 @@ export default function Page() {
 
 			<section>
 				<h2>最終課題について</h2>
+				<p>生成AIを使用してWebサイトを作成してください。</p>
 				<p>
-					この授業では、Webサイトの作成を通じて、コンピューターの基本的な操作とプログラミングの基礎を学びます。
-					最終課題では、自分で作成したWebサイトを公開することが目標です。
+					何のサイトにするかは自由です。例として、以下のサイトを生成AIで作成してみました。
 				</p>
-				{/* TODO: サンプルサイトの画像追加 */}
-				{/* TODO: サンプルサイトのリンク追加 */}
+				<a
+					href="https://dapper-squirrel-7a7bef.netlify.app/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					課題サンプルサイトへ
+				</a>
+				<Image src={taiwaCoffee} alt="タイワコーヒーのトップ画面" />
+
 				<h3>要件</h3>
 				<ul>
 					<li>オリジナルのWebサイトを作成する</li>
-					<li>HTML、CSS、JavaScriptを使用する</li>
-					<li>レスポンシブデザインに対応する</li>
-					<li>Webサイトを公開する</li>
+					<li>Webサイトを公開し、URLを発行する</li>
 				</ul>
-			</section>
-
-			<section>
-				<h2>使用するツール</h2>
-				<div>
-					<h3>Bolt.new</h3>
-					<Image src={boltNewTop} alt="Bolt.newのトップ画面" />
-					<p>
-						Bolt.newは、AIを活用したWebサイト作成ツールです。
-						プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
-					</p>
-				</div>
+				<p>
+					課題はURLをmoodleに提出してください。特に評価して欲しいポイントなどがあればそれも入力してください。
+				</p>
 			</section>
 		</article>
 	);

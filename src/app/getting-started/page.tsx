@@ -1,4 +1,6 @@
+import boltNewTop from "@/assets/bolt-new-top.png";
 import { CodeBlock } from "@/components/code-block";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -8,9 +10,9 @@ export default function Page() {
 			<section>
 				<h2>Bolt.newを使ってみよう</h2>
 				<p>
-					Bolt.newは、AIを活用したWebサイト作成ツールです。
-					プログラミングの知識がなくても、自然な言葉でWebサイトを作成することができます。
+					Bolt.newは、チャットベースの生成AIを使用してアプリ開発が出来るツールです。
 				</p>
+				<Image src={boltNewTop} alt="Bolt.newのトップ画面" />
 			</section>
 
 			<section>
