@@ -23,7 +23,7 @@ const menuItems = [
 	},
 	{
 		label: "webサイトを作る",
-		url: "/getting-started",
+		url: "/create",
 		// https://bolt.new/ にアクセス
 		// アカウント作成
 		// サンプルのプロンプトをコピペで実行
