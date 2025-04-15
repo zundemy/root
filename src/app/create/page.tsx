@@ -12,7 +12,7 @@ export default function Page() {
 			<section>
 				<h2>Bolt.newを使ってみよう</h2>
 				<p>
-					Bolt.newは、チャットベースの生成AIを使用してアプリ開発が出来るツールです。
+					Bolt.newは、チャットベースの生成AIを使用してアプリ開発が出来るサービスです。
 				</p>
 				<Image src={boltNewTop} alt="Bolt.newのトップ画面" />
 			</section>
@@ -53,7 +53,7 @@ export default function Page() {
 					</li>
 
 					<li>
-						<h3>アカウント作成</h3>
+						<h3>サインアップ</h3>
 						<p>
 							プロンプトを実行しようとするとサインアップモーダルが表示されます。いずれかの方法でサインアップしてください。
 						</p>
@@ -63,12 +63,12 @@ export default function Page() {
 					<li>
 						<h3>プロンプトを実行</h3>
 						<p>
-							プロンプトを実行すると、生成AIがコード生成を開始します。しばらくしてカフェのサイトのプレビューが表示されたら成功です。
+							サインアップが完了すると自動的にプロンプトが実行されます。実行されない場合はチャットの送信ボタンをクリックして実行してください。
 						</p>
-						<Image
-							src={boltNewCreated}
-							alt="Bolt.newで作成されたカフェのサイト"
-						/>
+						<p>
+							しばらくしてカフェのサイトのプレビューが表示されたら成功です。
+						</p>
+						<Image src={boltNewCreated} alt="Bolt.newでサイトを作成した画面" />
 					</li>
 
 					<li>
@@ -84,6 +84,16 @@ export default function Page() {
 						</ul>
 					</li>
 				</ol>
+			</section>
+
+			<section>
+				<h2>注意点</h2>
+				<ul>
+					<li>
+						Bolt.newの無料プランでは1日あたり、1ヶ月あたりの使用量が制限されています。
+						1ヶ月あたりの制限は最終課題を作成するには十分ですが、1日あたりの制限に引っかかった場合は次の日まで待ってください。
+					</li>
+				</ul>
 			</section>
 		</article>
 	);

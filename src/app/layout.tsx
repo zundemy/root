@@ -22,7 +22,7 @@ const menuItems = [
 		// 使用するツールの説明 (Bolt.new)
 	},
 	{
-		label: "webサイトを作る",
+		label: "Webサイトを作る",
 		url: "/create",
 		// https://bolt.new/ にアクセス
 		// アカウント作成
@@ -30,7 +30,7 @@ const menuItems = [
 		// 自由にカスタマイズしてみる
 	},
 	{
-		label: "webサイトを公開する",
+		label: "Webサイトを公開する",
 		url: "/publish",
 		// https://bolt.new/ にアクセス
 		// アカウント作成
