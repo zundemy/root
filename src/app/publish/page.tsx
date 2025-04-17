@@ -15,7 +15,16 @@ export default function Page() {
 				<p>
 					Webサイトを公開するにはサーバーにhtmlファイルなどをアップロードしてドメインを紐づけるなどの手順が必要ですが、Bolt.newではボタンひとつでNetlifyにアップロードして公開が可能です。
 				</p>
-				<p>Netlifyは、Webサイトをホスティング出来るサービスです。</p>
+				<p>
+					<a
+						href="https://www.netlify.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Netlify
+					</a>
+					は、Webサイトをインターネットに公開出来るサービスです。
+				</p>
 			</section>
 
 			<section>
@@ -30,7 +39,7 @@ export default function Page() {
 					<li>
 						<h3>URLを確認</h3>
 						<p>
-							デプロイが完了すると、URLが表示されます。あなたが作成したサイトがインターネットに公開され、このURLからアクセス出来るようになりました。
+							デプロイが完了すると、チャットエリアにURLが表示されます。あなたが作成したサイトがインターネットに公開され、このURLからアクセス出来るようになりました。
 						</p>
 						<Image
 							src={boltNewPublished}
@@ -47,6 +56,10 @@ export default function Page() {
 					<li>著作権に問題のある画像やコンテンツを使用していないか確認する</li>
 				</ul>
 			</section>
+
+			<p className="mt-8">
+				ここまでの内容で最終課題を作成することは可能ですが、出力されるコードを直接編集出来るとより細かい調整が可能です。Web技術に興味が湧いた方は是非次章の内容も挑戦してみて下さい。
+			</p>
 		</article>
 	);
 }

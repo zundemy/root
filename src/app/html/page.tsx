@@ -1,3 +1,8 @@
+import boltNewHtmlBefore from "@/assets/bolt-new-html-before.png";
+import htmlElement from "@/assets/html-element.png";
+import { CodeBlock } from "@/components/code-block";
+import Image from "next/image";
+
 export default function Page() {
 	return (
 		<article>
@@ -10,6 +15,19 @@ export default function Page() {
 					Language）は、Webページの構造を定義するための言語です。
 					タグと呼ばれる要素を使って、テキストや画像などのコンテンツを配置します。
 				</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h1>私のホームページ</h1>",
+						"<p>こんにちは！ここは私の紹介ページです。</p>",
+					].join("\n")}
+				/>
+				<Image src={htmlElement} alt="HTML要素" />
+				<p>
+					Bolt.newのCode画面から、<code>index.html</code>
+					ファイルを選択して下さい。
+				</p>
+				<Image src={boltNewHtmlBefore} alt="Bolt.newのHTML画面" />
 			</section>
 
 			<section>
