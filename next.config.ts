@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
 	reactStrictMode: true,
 	output: "export",
-	basePath: "/2025",
+	basePath: "/create-website-with-bolt",
 	images: { unoptimized: true },
 };
 

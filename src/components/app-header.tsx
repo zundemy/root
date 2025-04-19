@@ -6,7 +6,7 @@ export function AppHeader() {
 		<header className="flex h-16 items-center p-4">
 			<SidebarTrigger />
 			<Link href="/" className="ml-4 font-bold text-md md:text-lg">
-				コンピューターリテラシー 2025
+				Zundemy
 			</Link>
 		</header>
 	);

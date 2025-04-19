@@ -8,9 +8,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "コンピューターリテラシー 2025",
+	title: "boltでWebサイトを作ってみよう",
 	description:
-		"コンピューターリテラシー(2025) 第12回 ~ 第14回の授業資料です。生成AIを使用してwebサイトを作成してみましょう。",
+		"生成AIツールBolt.newを使用してwebサイトを作成してみるチュートリアルです。",
 };
 
 const menuItems = [
@@ -78,7 +78,7 @@ export default async function RootLayout({
 						<AppSidebar menuItems={menuItems} />
 						<div className="flex min-w-0 flex-1 flex-col">
 							<AppHeader />
-							<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto w-full max-w-4xl flex-1 space-y-8 p-8 prose-pre:text-sm">
+							<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto w-full max-w-4xl flex-1 space-y-8 p-8 prose-pre:py-4 prose-pre:text-sm">
 								{children}
 								<ArticleFooter menuItems={menuItems} />
 							</main>

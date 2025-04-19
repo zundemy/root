@@ -15,13 +15,6 @@ export default function Page() {
 					Language）は、Webページの構造を定義するための言語です。
 					タグと呼ばれる要素を使って、テキストや画像などのコンテンツを配置します。
 				</p>
-				<CodeBlock
-					lang="html"
-					code={[
-						"<h1>私のホームページ</h1>",
-						"<p>こんにちは！ここは私の紹介ページです。</p>",
-					].join("\n")}
-				/>
 				<Image src={htmlElement} alt="HTML要素" />
 				<p>
 					Bolt.newのCode画面から、<code>index.html</code>
@@ -31,43 +24,116 @@ export default function Page() {
 			</section>
 
 			<section>
-				<h2>基本的なHTMLタグ</h2>
+				<h2>HTMLの基本構造</h2>
+				<p>
+					まずは、HTMLの基本構造から始めましょう。以下のコードをコピーして、index.htmlに貼り付けてください。
+				</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<!DOCTYPE html>",
+						'<html lang="ja">',
+						"  <head>",
+						'    <meta charset="UTF-8">',
+						"    <title>私のホームページ</title>",
+						"  </head>",
+						"  <body>",
+						"    <h1>ようこそ</h1>",
+						"  </body>",
+						"</html>",
+					].join("\n")}
+				/>
+			</section>
 
-				<div>
-					<h3>aタグ（リンク）</h3>
-					<p>他のページやWebサイトへのリンクを作成します。</p>
-					<pre>{`<a href="https://example.com">リンクテキスト</a>`}</pre>
-					<p>
-						例：
-						<a
-							href="https://example.com"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							リンクテキスト
-						</a>
-					</p>
-				</div>
+			<section>
+				<h2>見出しと段落</h2>
+				<p>
+					次に、見出しと段落を追加してみましょう。bodyタグの中に以下のコードを追加してください。
+				</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h2>自己紹介</h2>",
+						"<p>こんにちは！私はWeb開発を勉強しています。</p>",
+						"<p>HTMLを使って、自分のホームページを作成しています。</p>",
+					].join("\n")}
+				/>
+			</section>
 
-				<div>
-					<h3>imgタグ（画像）</h3>
-					<p>画像を表示します。</p>
-					<pre>{`<img src="画像のURL" alt="代替テキスト">`}</pre>
-					<p>
-						例：
-						<img src="https://via.placeholder.com/150" alt="サンプル画像" />
-					</p>
-				</div>
+			<section>
+				<h2>リンクの追加</h2>
+				<p>他のページへのリンクを追加してみましょう。</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h2>お気に入りのサイト</h2>",
+						"<p>以下のサイトがおすすめです：</p>",
+						'<a href="https://example.com" target="_blank">サンプルサイト</a>',
+					].join("\n")}
+				/>
+			</section>
 
-				<div>
-					<h3>inputタグ（入力フォーム）</h3>
-					<p>ユーザーからの入力を受け取るフォームを作成します。</p>
-					<pre>{`<input type="text" placeholder="テキストを入力">`}</pre>
-					<p>
-						例：
-						<input type="text" placeholder="テキストを入力" />
-					</p>
-				</div>
+			<section>
+				<h2>画像の追加</h2>
+				<p>
+					画像を追加してみましょう。publicフォルダに画像を配置して、以下のコードを追加してください。
+				</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h2>プロフィール画像</h2>",
+						'<img src="/profile.jpg" alt="プロフィール画像" width="200">',
+					].join("\n")}
+				/>
+			</section>
+
+			<section>
+				<h2>リストの作成</h2>
+				<p>順序付きリストと順序なしリストを作成してみましょう。</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h2>趣味</h2>",
+						"<ul>",
+						"  <li>プログラミング</li>",
+						"  <li>読書</li>",
+						"  <li>旅行</li>",
+						"</ul>",
+						"",
+						"<h2>今日の予定</h2>",
+						"<ol>",
+						"  <li>朝食を食べる</li>",
+						"  <li>HTMLの勉強</li>",
+						"  <li>散歩に行く</li>",
+						"</ol>",
+					].join("\n")}
+				/>
+			</section>
+
+			<section>
+				<h2>フォームの作成</h2>
+				<p>ユーザーからの入力を受け取るフォームを作成してみましょう。</p>
+				<CodeBlock
+					lang="html"
+					code={[
+						"<h2>お問い合わせ</h2>",
+						"<form>",
+						"  <div>",
+						'    <label for="name">お名前：</label>',
+						'    <input type="text" id="name" name="name">',
+						"  </div>",
+						"  <div>",
+						'    <label for="email">メールアドレス：</label>',
+						'    <input type="email" id="email" name="email">',
+						"  </div>",
+						"  <div>",
+						'    <label for="message">メッセージ：</label>',
+						'    <textarea id="message" name="message"></textarea>',
+						"  </div>",
+						'  <button type="submit">送信</button>',
+						"</form>",
+					].join("\n")}
+				/>
 			</section>
 
 			<section>
