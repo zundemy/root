@@ -13,7 +13,7 @@ export default function Page() {
 	);
 }
 
-export function Header() {
+function Header() {
 	return (
 		<header className="flex h-16 items-center p-4">
 			<Link href="/" className="ml-4 font-bold text-md md:text-lg">

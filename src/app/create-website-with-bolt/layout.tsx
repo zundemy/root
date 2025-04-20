@@ -86,7 +86,7 @@ export default async function Layout({
 	);
 }
 
-export function Header() {
+function Header() {
 	return (
 		<header className="flex h-16 items-center p-4">
 			<SidebarTrigger />
