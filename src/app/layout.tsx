@@ -1,69 +1,11 @@
-import { AppFooter } from "@/components/app-footer";
-import { AppHeader } from "@/components/app-header";
-import { AppSidebar } from "@/components/app-sidebar";
-import { ArticleFooter } from "@/components/article-footer";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "boltでWebサイトを作ってみよう",
-	description:
-		"生成AIツールBolt.newを使用してwebサイトを作成してみるチュートリアルです。",
+	title: "Zundemy",
+	description: "",
 };
-
-const menuItems = [
-	{
-		label: "やること",
-		url: "/introduction",
-		// 最終課題の要件
-		// 最終課題のサンプルを提示
-		// 使用するツールの説明 (Bolt.new)
-	},
-	{
-		label: "Webサイトを作る",
-		url: "/create",
-		// https://bolt.new/ にアクセス
-		// アカウント作成
-		// サンプルのプロンプトをコピペで実行
-		// 自由にカスタマイズしてみる
-	},
-	{
-		label: "Webサイトを公開する",
-		url: "/publish",
-		// https://bolt.new/ にアクセス
-		// アカウント作成
-		// サンプルのプロンプトをコピペで実行
-		// 自由にカスタマイズしてみる
-	},
-	{
-		label: "HTMLを編集する",
-		url: "/html",
-		// htmlの構造を説明
-		// aタグ
-		// imgタグ
-		// inputタグ
-		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/HTML/Reference
-	},
-	{
-		label: "CSSを編集する",
-		url: "/css",
-		// cssの構造を説明
-		// background-colorを変えてみる
-		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/CSS/Reference
-	},
-	{
-		label: "JavaScriptを編集する",
-		url: "/javascript",
-		// JavaScriptの構造を説明
-		// mdn web docsを紹介する https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference
-	},
-	{
-		label: "もっと学びたい人へ",
-		url: "/advanced",
-	},
-];
 
 export default async function RootLayout({
 	children,
@@ -72,21 +14,7 @@ export default async function RootLayout({
 }>) {
 	return (
 		<html lang="ja" className="dark bg-neutral-900">
-			<body>
-				<SidebarProvider>
-					<div className="flex min-h-svh min-w-0 flex-1">
-						<AppSidebar menuItems={menuItems} />
-						<div className="flex min-w-0 flex-1 flex-col">
-							<AppHeader />
-							<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto w-full max-w-4xl flex-1 space-y-8 p-8 prose-pre:py-4 prose-pre:text-sm">
-								{children}
-								<ArticleFooter menuItems={menuItems} />
-							</main>
-							<AppFooter />
-						</div>
-					</div>
-				</SidebarProvider>
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
