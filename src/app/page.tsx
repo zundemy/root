@@ -7,18 +7,15 @@ export default function Page() {
 			<div className="flex min-w-0 flex-1 flex-col">
 				<Header />
 				<main className="flex h-full flex-col items-center justify-center space-y-12">
-					<div className="max-w-2xl px-8 text-center">
-						<h1 className="mb-6 font-light text-3xl tracking-wide">Zundemy</h1>
-						<p className="mb-4 text-lg text-neutral-300 leading-relaxed">
+					<div className="max-w-3xl px-8 text-center">
+						<h1 className="mb-4 text-3xl">Zundemy</h1>
+						<p>
 							ずんだもん（大学1年生）とめたん先生（特任助教授 兼
 							ソフトウェアエンジニア）が
-							ソフトウェア業界の情報を伝えるYouTubeチャンネルです。
 						</p>
-						<p className="text-neutral-400">
-							最新のIT・プログラミング情報やキャリアの話題を、楽しく分かりやすく発信しています。
-						</p>
+						<p>ソフトウェア業界の情報を伝えるYouTubeチャンネルです。</p>
 					</div>
-					<div className="flex space-x-8">
+					<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
 						<ExternalLink
 							text="YouTube"
 							href="https://www.youtube.com/@zundemy"
