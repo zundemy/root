@@ -7,12 +7,10 @@ export default function Page() {
 			<div className="flex min-w-0 flex-1 flex-col">
 				<main className="flex h-full flex-col items-center justify-center space-y-12">
 					<div className="max-w-3xl px-8 text-center">
-						<h1 className="mb-4 text-3xl">Zundemy</h1>
+						<h1 className="mb-6 font-bold text-3xl">Zundemy</h1>
 						<p>
-							ずんだもん（大学1年生）とめたん先生（特任助教授 兼
-							ソフトウェアエンジニア）が
+							ソフトウェアエンジニアを目指す大学生向けに情報発信をしています。
 						</p>
-						<p>ソフトウェア業界の情報を伝えるYouTubeチャンネルです。</p>
 					</div>
 					<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
 						<ExternalLink
