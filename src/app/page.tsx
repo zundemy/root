@@ -1,11 +1,10 @@
 import { AppFooter } from "@/components/app-footer";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
 	return (
 		<div className="flex min-h-svh min-w-0 flex-1">
 			<div className="flex min-w-0 flex-1 flex-col">
-				<Header />
 				<main className="flex h-full flex-col items-center justify-center space-y-12">
 					<div className="max-w-3xl px-8 text-center">
 						<h1 className="mb-4 text-3xl">Zundemy</h1>
@@ -28,23 +27,17 @@ export default function Page() {
 							text="TikTok"
 							href="https://www.tiktok.com/@zundemy"
 						/>
-						<ExternalLink text="Twitter" href="https://x.com/zundemy" />
+						<ExternalLink text="X" href="https://x.com/zundemy" />
 						<ExternalLink text="GitHub" href="https://github.com/zundemy" />
+						<ExternalLink
+							text="yourware"
+							href="https://www.yourware.so/profile/MWXbAFZy2pcNN5JBZIVXotJNWRH2"
+						/>
 					</div>
 				</main>
 				<AppFooter />
 			</div>
 		</div>
-	);
-}
-
-function Header() {
-	return (
-		<header className="flex h-16 items-center p-4">
-			<Link href="/" className="ml-4 font-bold text-md md:text-lg">
-				Zundemy
-			</Link>
-		</header>
 	);
 }
 
@@ -55,13 +48,10 @@ type ExternalLinkProps = {
 
 function ExternalLink({ text, href }: ExternalLinkProps) {
 	return (
-		<a
-			href={href}
-			target="_blank"
-			rel="noopener noreferrer"
-			className="text-neutral-400 transition-colors hover:text-white"
-		>
-			{text}
-		</a>
+		<Button variant="link" asChild>
+			<a href={href} target="_blank" rel="noopener noreferrer">
+				{text}
+			</a>
+		</Button>
 	);
 }
