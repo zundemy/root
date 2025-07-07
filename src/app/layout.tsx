@@ -6,7 +6,7 @@ import { AppHeader } from "@/components/app-header";
 
 export const metadata: Metadata = {
 	title: "Zundemy",
-	description: "",
+	description: "ソフトウェア開発に興味のある学生向けの学習リソースです。",
 };
 
 export default async function RootLayout({
