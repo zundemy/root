@@ -1,41 +1,17 @@
-import { AppFooter } from "@/components/app-footer";
 import { Button } from "@/components/ui/button";
 
 export default function Page() {
 	return (
-		<div className="flex min-h-svh min-w-0 flex-1">
-			<div className="flex min-w-0 flex-1 flex-col">
-				<main className="flex h-full flex-col items-center justify-center space-y-12">
-					<div className="max-w-3xl px-8 text-center">
-						<h1 className="mb-6 font-bold text-3xl">Zundemy</h1>
-						<p>
-							ソフトウェアエンジニアを目指す大学生向けに情報発信をしています。
-						</p>
-					</div>
-					<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
-						<ExternalLink
-							text="YouTube"
-							href="https://www.youtube.com/@zundemy"
-						/>
-						<ExternalLink
-							text="Instagram"
-							href="https://www.instagram.com/zundemy/"
-						/>
-						<ExternalLink
-							text="TikTok"
-							href="https://www.tiktok.com/@zundemy"
-						/>
-						<ExternalLink text="X" href="https://x.com/zundemy" />
-						<ExternalLink text="GitHub" href="https://github.com/zundemy" />
-						<ExternalLink
-							text="yourware"
-							href="https://www.yourware.so/profile/MWXbAFZy2pcNN5JBZIVXotJNWRH2"
-						/>
-					</div>
-				</main>
-				<AppFooter />
+		<main className="flex h-full flex-col items-center justify-center space-y-12">
+			<div className="max-w-3xl px-8 text-center">
+				<p>ソフトウェアエンジニアを目指す大学生向けに情報発信をしています。</p>
 			</div>
-		</div>
+			<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+				{socialMediaLinks.map((socialMediaLink) => (
+					<ExternalLink key={socialMediaLink.text} {...socialMediaLink} />
+				))}
+			</div>
+		</main>
 	);
 }
 
@@ -53,3 +29,26 @@ function ExternalLink({ text, href }: ExternalLinkProps) {
 		</Button>
 	);
 }
+
+const socialMediaLinks = [
+	{
+		text: "YouTube",
+		href: "https://www.youtube.com/@zundemy",
+	},
+	{
+		text: "Instagram",
+		href: "https://www.instagram.com/zundemy/",
+	},
+	{
+		text: "TikTok",
+		href: "https://www.tiktok.com/@zundemy",
+	},
+	{
+		text: "X",
+		href: "https://x.com/zundemy",
+	},
+	{
+		text: "GitHub",
+		href: "https://github.com/zundemy",
+	},
+];
