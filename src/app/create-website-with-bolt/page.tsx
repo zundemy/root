@@ -8,7 +8,10 @@ export default function Page() {
 				<p>生成AIを使用してwebサイトを作成してみましょう。</p>
 			</div>
 			<Button size="lg" className="w-28" asChild>
-				<Link href="/introduction" className="no-underline">
+				<Link
+					href="/create-website-with-bolt/introduction"
+					className="no-underline"
+				>
 					始める
 				</Link>
 			</Button>
