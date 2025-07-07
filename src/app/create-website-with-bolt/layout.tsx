@@ -1,4 +1,4 @@
-import { AppFooter } from "@/components/app-footer";
+// import { AppFooter } from "@/components/app-footer";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ArticleFooter } from "@/components/article-footer";
 import { SidebarProvider } from "@/components/ui/sidebar";
@@ -97,5 +97,11 @@ function Header() {
 				Zundemy
 			</Link>
 		</header>
+	);
+}
+
+function AppFooter() {
+	return (
+		<footer className="py-10 text-center text-xs">&copy; 2025 Zundemy</footer>
 	);
 }
