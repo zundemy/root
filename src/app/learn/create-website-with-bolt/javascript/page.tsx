@@ -1,4 +1,5 @@
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { LinkAsButton } from "@/components/link-as-button";
 
 export default function Page() {
 	return (
@@ -84,13 +85,12 @@ document.getElementById("myButton").addEventListener("click", function() {
 						JavaScriptについてもっと詳しく知りたい方は、以下のMDN Web
 						Docsを参考にしてください：
 					</p>
-					<a
+					<LinkAsButton
 						href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference"
-						target="_blank"
-						rel="noopener noreferrer"
+						external
 					>
 						MDN Web Docs - JavaScript リファレンス
-					</a>
+					</LinkAsButton>
 				</section>
 			</article>
 		</div>

@@ -1,4 +1,5 @@
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { LinkAsButton } from "@/components/link-as-button";
 
 export default function Page() {
 	return (
@@ -65,13 +66,12 @@ export default function Page() {
 						CSSについてもっと詳しく知りたい方は、以下のMDN Web
 						Docsを参考にしてください：
 					</p>
-					<a
+					<LinkAsButton
 						href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference"
-						target="_blank"
-						rel="noopener noreferrer"
+						external
 					>
 						MDN Web Docs - CSS リファレンス
-					</a>
+					</LinkAsButton>
 				</section>
 			</article>
 		</div>

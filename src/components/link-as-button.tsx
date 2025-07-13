@@ -15,7 +15,7 @@ export function LinkAsButton({
 	external = false,
 }: LinkAsButtonProps) {
 	return (
-		<Button variant="link" asChild>
+		<Button variant="link" size="sm" asChild>
 			{external ? (
 				<a href={href} target="_blank" rel="noopener noreferrer">
 					{children}

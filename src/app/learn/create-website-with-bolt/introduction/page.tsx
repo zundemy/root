@@ -1,5 +1,6 @@
 import taiwaCoffee from "@/assets/taiwa-coffee.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { LinkAsButton } from "@/components/link-as-button";
 import Image from "next/image";
 
 export default function Page() {
@@ -16,7 +17,10 @@ export default function Page() {
 				<h1>やること</h1>
 
 				<p>
-					生成AIツール<a href="https://bolt.new">bolt</a>
+					生成AIツール
+					<LinkAsButton href="https://bolt.new" external>
+						bolt
+					</LinkAsButton>
 					を使用してWebサイトを作成し、インターネットに公開する方法を学びます。
 				</p>
 
@@ -31,18 +35,16 @@ export default function Page() {
 				<section>
 					<h2>実際に作るもののサンプル</h2>
 					<p>作れるものの一例としてカフェのサイトを作りました。</p>
-					<a
-						href="https://dapper-squirrel-7a7bef.netlify.app/"
-						target="_blank"
-						rel="noopener noreferrer"
+					<LinkAsButton
+						href="https://dapper-squirrel-7a7bef.netlify.app"
+						external
 					>
 						サンプルのカフェのウェブサイト
-					</a>
+					</LinkAsButton>
 					<Image
 						src={taiwaCoffee}
 						alt="サンプルのカフェのウェブサイトのトップ画面"
 					/>
-
 					<p>準備が出来たら、早速Webサイトを作って行きましょう。</p>
 				</section>
 			</article>

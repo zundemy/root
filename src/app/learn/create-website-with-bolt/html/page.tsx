@@ -2,6 +2,7 @@ import boltNewHtmlBefore from "@/assets/bolt-new-html-before.png";
 import htmlElement from "@/assets/html-element.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
 import { CodeBlock } from "@/components/code-block";
+import { LinkAsButton } from "@/components/link-as-button";
 import Image from "next/image";
 
 export default function Page() {
@@ -151,13 +152,12 @@ export default function Page() {
 						HTMLについてもっと詳しく知りたい方は、以下のMDN Web
 						Docsを参考にしてください：
 					</p>
-					<a
+					<LinkAsButton
 						href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference"
-						target="_blank"
-						rel="noopener noreferrer"
+						external
 					>
 						MDN Web Docs - HTML リファレンス
-					</a>
+					</LinkAsButton>
 				</section>
 			</article>
 		</div>

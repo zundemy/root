@@ -3,6 +3,7 @@ import boltNewSignup from "@/assets/bolt-new-signup.png";
 import boltNewTop from "@/assets/bolt-new-top.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
 import { CodeBlock } from "@/components/code-block";
+import { LinkAsButton } from "@/components/link-as-button";
 import Image from "next/image";
 
 export default function Page() {
@@ -32,13 +33,9 @@ export default function Page() {
 						<li>
 							<h3>Bolt.newにアクセス</h3>
 							<p>
-								<a
-									href="https://bolt.new"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<LinkAsButton href="https://bolt.new" external>
 									https://bolt.new
-								</a>
+								</LinkAsButton>
 								にアクセスしてください。
 							</p>
 						</li>

@@ -1,6 +1,7 @@
 import boltNewCreated from "@/assets/bolt-new-created.png";
 import boltNewPublished from "@/assets/bolt-new-published.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { LinkAsButton } from "@/components/link-as-button";
 import Image from "next/image";
 
 export default function Page() {
@@ -25,13 +26,9 @@ export default function Page() {
 						Webサイトを公開するにはサーバーにhtmlファイルなどをアップロードしてドメインを紐づけるなどの手順が必要ですが、Bolt.newではボタンひとつでNetlifyにアップロードして公開が可能です。
 					</p>
 					<p>
-						<a
-							href="https://www.netlify.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<LinkAsButton href="https://www.netlify.com/" external>
 							Netlify
-						</a>
+						</LinkAsButton>
 						は、Webサイトをインターネットに公開出来るサービスです。
 					</p>
 				</section>

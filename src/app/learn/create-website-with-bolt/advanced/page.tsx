@@ -1,4 +1,5 @@
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { LinkAsButton } from "@/components/link-as-button";
 
 export default function Page() {
 	return (
@@ -28,34 +29,22 @@ export default function Page() {
 						<h3>オンライン学習プラットフォーム</h3>
 						<ul>
 							<li>
-								<a
-									href="https://prog-8.com/"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<LinkAsButton href="https://prog-8.com/" external>
 									Progate
-								</a>
-								- 初心者向けのプログラミング学習サイト
+								</LinkAsButton>
+								初心者向けのプログラミング学習サイト
 							</li>
 							<li>
-								<a
-									href="https://dotinstall.com/"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<LinkAsButton href="https://dotinstall.com/" external>
 									dotinstall
-								</a>
-								- 動画で学ぶプログラミング学習サイト
+								</LinkAsButton>
+								動画で学ぶプログラミング学習サイト
 							</li>
 							<li>
-								<a
-									href="https://www.udemy.com/"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<LinkAsButton href="https://www.udemy.com/" external>
 									Udemy
-								</a>
-								- 様々なプログラミングコースが学べるプラットフォーム
+								</LinkAsButton>
+								様々なプログラミングコースが学べるプラットフォーム
 							</li>
 						</ul>
 					</div>
@@ -91,20 +80,6 @@ export default function Page() {
 							<li>セキュリティ対策</li>
 						</ul>
 					</div>
-				</section>
-
-				<section>
-					<h2>コミュニティ</h2>
-					<p>
-						プログラミングの学習は、一人で行うよりもコミュニティに参加することで
-						より効率的に学ぶことができます。以下のようなコミュニティに参加してみましょう：
-					</p>
-					<ul>
-						<li>QiitaやZennなどの技術ブログ</li>
-						<li>GitHubでのオープンソースプロジェクトへの参加</li>
-						<li>プログラミング勉強会やハッカソンへの参加</li>
-						<li>TwitterやDiscordなどのSNSでの情報交換</li>
-					</ul>
 				</section>
 			</article>
 		</div>
