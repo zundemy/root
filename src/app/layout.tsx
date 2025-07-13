@@ -1,12 +1,11 @@
-import { AppFooter } from "@/components/app-footer";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import "./globals.css";
-import { AppHeader } from "@/components/app-header";
 
 export const metadata: Metadata = {
 	title: "Zundemy",
-	description: "",
+	description: "ソフトウェア開発に興味のある学生向けの学習リソースです。",
 };
 
 export default async function RootLayout({
@@ -20,13 +19,29 @@ export default async function RootLayout({
 				<div className="flex min-h-svh min-w-0 flex-1">
 					<div className="flex min-w-0 flex-1 flex-col">
 						<AppHeader />
-						<main className="flex h-full flex-col items-center justify-center space-y-12">
-							{children}
-						</main>
+						<main className="relative h-full">{children}</main>
 						<AppFooter />
 					</div>
 				</div>
 			</body>
 		</html>
+	);
+}
+
+function AppHeader() {
+	return (
+		<header className="fixed top-0 z-50 flex h-(--header-height) w-full items-center px-5 backdrop-blur-3xl">
+			<h1 className="font-bold text-xl">
+				<Link href="/">Zundemy</Link>
+			</h1>
+		</header>
+	);
+}
+
+function AppFooter() {
+	return (
+		<footer className="flex h-(--footer-height) items-center justify-center text-center text-xs">
+			&copy; 2025 Zundemy
+		</footer>
 	);
 }

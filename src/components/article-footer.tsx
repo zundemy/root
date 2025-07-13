@@ -6,21 +6,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type ArticleFooterProps = {
-	menuItems: {
+	indexItems: {
 		label: string;
-		url: string;
+		href: string;
 	}[];
 };
 
-export function ArticleFooter({ menuItems }: ArticleFooterProps) {
+export function ArticleFooter({ indexItems }: ArticleFooterProps) {
 	const pathname = usePathname();
 
 	if (pathname === "/") return null;
 
-	const currentIndex = menuItems.findIndex((item) => item.url === pathname);
-	const previousItem = currentIndex === 0 ? null : menuItems[currentIndex - 1];
+	const currentIndex = indexItems.findIndex(({ href }) => href === pathname);
+	const previousItem = currentIndex < 1 ? null : indexItems[currentIndex - 1];
 	const nextItem =
-		currentIndex === menuItems.length - 1 ? null : menuItems[currentIndex + 1];
+		currentIndex > indexItems.length ? null : indexItems[currentIndex + 1];
 
 	return (
 		<footer className="flex justify-between">
@@ -39,7 +39,7 @@ export function ArticleFooter({ menuItems }: ArticleFooterProps) {
 type FooterLinkProps = {
 	link: {
 		label: string;
-		url: string;
+		href: string;
 	} | null;
 };
 
@@ -47,7 +47,7 @@ function FooterLink({ link }: FooterLinkProps) {
 	if (!link) return null;
 
 	return (
-		<Link href={link.url} className="no-underline">
+		<Link href={link.href} className="no-underline">
 			{link.label}
 		</Link>
 	);

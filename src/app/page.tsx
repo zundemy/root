@@ -1,54 +1,52 @@
-import { Button } from "@/components/ui/button";
+import { LinkAsButton } from "@/components/link-as-button";
 
 export default function Page() {
 	return (
-		<main className="flex h-full flex-col items-center justify-center space-y-12">
-			<div className="max-w-3xl px-8 text-center">
+		<div className="mx-auto mt-(--header-height) mb-(--footer-height) max-w-3xl space-y-10 p-5">
+			<section>
 				<p>ソフトウェアエンジニアを目指す大学生向けに情報発信をしています。</p>
-			</div>
-			<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
-				{socialMediaLinks.map((socialMediaLink) => (
-					<ExternalLink key={socialMediaLink.text} {...socialMediaLink} />
-				))}
-			</div>
-		</main>
-	);
-}
+			</section>
 
-type ExternalLinkProps = {
-	text: string;
-	href: string;
-};
+			<section>
+				<h2 className="text-xl">Learn</h2>
+				<LinkAsButton href="/learn/create-website-with-bolt">
+					boltでWebサイトを作ってみよう
+				</LinkAsButton>
+			</section>
 
-function ExternalLink({ text, href }: ExternalLinkProps) {
-	return (
-		<Button variant="link" asChild>
-			<a href={href} target="_blank" rel="noopener noreferrer">
-				{text}
-			</a>
-		</Button>
+			<section>
+				<h2 className="text-xl">Social Media</h2>
+				<div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
+					{socialMediaLinks.map(({ label, href }) => (
+						<LinkAsButton key={label} href={href}>
+							{label}
+						</LinkAsButton>
+					))}
+				</div>
+			</section>
+		</div>
 	);
 }
 
 const socialMediaLinks = [
 	{
-		text: "YouTube",
+		label: "YouTube",
 		href: "https://www.youtube.com/@zundemy",
 	},
 	{
-		text: "Instagram",
+		label: "Instagram",
 		href: "https://www.instagram.com/zundemy/",
 	},
 	{
-		text: "TikTok",
+		label: "TikTok",
 		href: "https://www.tiktok.com/@zundemy",
 	},
 	{
-		text: "X",
+		label: "X",
 		href: "https://x.com/zundemy",
 	},
 	{
-		text: "GitHub",
+		label: "GitHub",
 		href: "https://github.com/zundemy",
 	},
 ];

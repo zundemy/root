@@ -14,25 +14,28 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type AppSidebarProps = {
-	menuItems: {
+	indexItems: {
 		label: string;
-		url: string;
+		href: string;
 	}[];
 };
 
-export function AppSidebar({ menuItems }: AppSidebarProps) {
+export function AppSidebar({ indexItems }: AppSidebarProps) {
 	const pathname = usePathname();
 	return (
-		<Sidebar>
+		<Sidebar
+			variant="inset"
+			className="fixed top-[calc(var(--header-height)+1px)] h-[calc(100svh-var(--header-height)-var(--footer-height))]"
+		>
 			<SidebarContent>
 				<SidebarGroup>
 					<SidebarGroupLabel>目次</SidebarGroupLabel>
 					<SidebarGroupContent>
 						<SidebarMenu>
-							{menuItems.map((item, number) => (
+							{indexItems.map((item, number) => (
 								<SidebarMenuItem key={item.label}>
-									<SidebarMenuButton asChild isActive={pathname === item.url}>
-										<Link href={item.url}>
+									<SidebarMenuButton asChild isActive={pathname === item.href}>
+										<Link href={item.href}>
 											<span className="flex h-4 w-4 shrink-0 items-center justify-center">
 												{number + 1}
 											</span>
