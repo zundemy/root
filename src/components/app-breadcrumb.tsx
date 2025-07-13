@@ -6,22 +6,31 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Fragment } from "react";
 
-export function AppBreadcrumb() {
+type AppBreadcrumbProps = {
+	items: {
+		label: string;
+		href?: string;
+	}[];
+};
+
+export function AppBreadcrumb({ items }: AppBreadcrumbProps) {
 	return (
 		<Breadcrumb>
 			<BreadcrumbList>
-				<BreadcrumbItem>
-					<BreadcrumbLink href="/">Home</BreadcrumbLink>
-				</BreadcrumbItem>
-				<BreadcrumbSeparator />
-				<BreadcrumbItem>
-					<BreadcrumbLink href="/components">Components</BreadcrumbLink>
-				</BreadcrumbItem>
-				<BreadcrumbSeparator />
-				<BreadcrumbItem>
-					<BreadcrumbPage>Breadcrumb</BreadcrumbPage>
-				</BreadcrumbItem>
+				{items.map((item, index) => (
+					<Fragment key={item.label}>
+						{index !== 0 && <BreadcrumbSeparator />}
+						<BreadcrumbItem>
+							{item.href ? (
+								<BreadcrumbLink href={item.href}>{item.label}</BreadcrumbLink>
+							) : (
+								<BreadcrumbPage>{item.label}</BreadcrumbPage>
+							)}
+						</BreadcrumbItem>
+					</Fragment>
+				))}
 			</BreadcrumbList>
 		</Breadcrumb>
 	);

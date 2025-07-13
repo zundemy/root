@@ -19,8 +19,8 @@ export default async function Layout({
 		<SidebarProvider>
 			<div className="flex min-h-svh min-w-0 flex-1">
 				<AppSidebar indexItems={indexItems} />
-				<div className="flex min-w-0 flex-1 flex-col">
-					<main className="prose prose-neutral prose-sm dark:prose-invert mx-auto mt-(--header-height) w-full max-w-4xl flex-1 p-8 prose-pre:py-4 prose-pre:text-sm">
+				<div className="mt-(--header-height) mb-(--footer-height) flex min-w-0 flex-1 flex-col">
+					<main className="mx-auto w-full max-w-4xl flex-1 p-8">
 						{children}
 						<div className="pt-8">
 							<ArticleFooter indexItems={indexItems} />
