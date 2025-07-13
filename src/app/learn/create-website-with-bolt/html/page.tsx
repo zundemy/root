@@ -49,40 +49,130 @@ export default function Page() {
 						Language）は、Webページの構造を定義するための言語です。
 						タグと呼ばれる要素を使って、テキストや画像などのコンテンツを配置します。
 					</p>
-					<Image src={htmlElement} alt="HTML要素" />
-					<p>
-						boltのCode画面から、<code>index.html</code>
-						ファイルを選択して下さい。
-					</p>
-					<Image src={boltNewHtmlBefore} alt="boltのHTML画面" />
 				</section>
 
 				<section>
 					<h2>HTMLの基本構造</h2>
+
+					<p>HTMLの最も基本的な形は以下のようなものです。</p>
+					<Image src={htmlElement} alt="HTML要素" />
 					<p>
-						まずは、HTMLの基本構造から始めましょう。以下のコードをコピーして、index.htmlに貼り付けてください。
+						開始タグと終了タグの間にコンテンツを記述し、このセットをHTML要素と呼びます。
+					</p>
+					<p>
+						開始タグは&lt; &gt;、終了タグは&lt;/ &gt;
+						で要素名（この場合は大見出しを表す h1 ）を囲んでいます。
+					</p>
+				</section>
+
+				<section>
+					<h2>HTMLのテンプレート</h2>
+
+					<p>
+						まずはテンプレートのファイルにどんなことが書いてあるか見てみましょう。
+					</p>
+					<p>
+						boltのCodeタブから、<code>index.html</code>
+						ファイルを選択して下さい。
+					</p>
+					<Image src={boltNewHtmlBefore} alt="boltのHTML画面" />
+
+					<p>以下のようなソースコードになっています。</p>
+					<CodeBlock
+						lang="html"
+						code={[
+							"<!DOCTYPE html>",
+							"<html>",
+							"  <head>",
+							'    <meta charset="UTF-8" />',
+							'    <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+							"    <title>minimal-web-template</title>",
+							'    <link rel="stylesheet" href="style.css" />',
+							'    <script type="module" src="main.js"></script>',
+							"  </head>",
+							"",
+							"  <body>",
+							"    <h1>Hello, world!</h1>",
+							"  </body>",
+							"</html>",
+						].join("\n")}
+					/>
+
+					<p>以下はこのファイルの内容がHTMLであることを示すためのものです。</p>
+					<CodeBlock
+						lang="html"
+						// biome-ignore format: for code
+						code={[
+							"<!DOCTYPE html>",
+							"<html>",
+							"",
+							"</html>"
+						].join("\n")}
+					/>
+
+					<p>
+						bodyタグの中にブラウザに表示するものを記述し、
+						headタグには画面には表示しないメタデータを記述します。
 					</p>
 					<CodeBlock
 						lang="html"
 						code={[
 							"<!DOCTYPE html>",
-							'<html lang="ja">',
+							"<html>",
 							"  <head>",
-							'    <meta charset="UTF-8">',
-							"    <title>私のホームページ</title>",
+							"    <!-- 画面に表示しないメタデータを記述 -->",
 							"  </head>",
+							"",
 							"  <body>",
-							"    <h1>ようこそ</h1>",
+							"    <!-- 画面に表示する内容を記述 -->",
 							"  </body>",
 							"</html>",
+						].join("\n")}
+					/>
+
+					<p>テンプレートのhead タグには以下のような内容が記述されています。</p>
+					<CodeBlock
+						lang="html"
+						code={[
+							"<head>",
+							"  <!-- 文字コードにUTF-8を指定 -->",
+							'  <meta charset="UTF-8" />',
+							"",
+							"  <!-- スマホで表示崩れしないようにviewportの設定 -->",
+							'  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+							"",
+							"  <!-- ブラウザのタブや検索エンジンに表示されるタイトルを指定 -->",
+							"  <title>minimal-web-template</title>",
+							"",
+							"  <!-- CSSファイルstyle.cssを読み込み -->",
+							'  <link rel="stylesheet" href="style.css" />',
+							"",
+							"  <!-- JavaScriptファイルmain.jsを読み込み -->",
+							'  <script type="module" src="main.js"></script>',
+							"</head>",
+						].join("\n")}
+					/>
+
+					<p>
+						テンプレートのbodyタグにはh1タグ（1番大きな見出しを表示するHTMLタグ）でHello,
+						world!という文字を表示しています。
+					</p>
+					<CodeBlock
+						lang="html"
+						// biome-ignore format: for code
+						code={[
+							"<body>",
+							"  <h1>Hello, world!</h1>",
+							"</body>",
 						].join("\n")}
 					/>
 				</section>
 
 				<section>
-					<h2>見出しと段落</h2>
+					<h2>HTMLを書いてみよう</h2>
+					<h3>見出しと段落</h3>
 					<p>
-						次に、見出しと段落を追加してみましょう。bodyタグの中に以下のコードを追加してください。
+						見出しと段落を追加してみましょう。bodyタグの中に以下のコードを追加してください。
 					</p>
 					<CodeBlock
 						lang="html"
