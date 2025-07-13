@@ -1,5 +1,8 @@
+import boltNewCssBefore from "@/assets/bolt-new-css-before.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
+import { CodeBlock } from "@/components/code-block";
 import { LinkAsButton } from "@/components/link-as-button";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -24,54 +27,86 @@ export default function Page() {
 				</section>
 
 				<section>
-					<h2>基本的なCSSプロパティ</h2>
+					<h2>CSSの基本構造</h2>
+					<p>
+						まずはテンプレートのファイルにどんなことが書いてあるか見てみましょう。
+					</p>
+					<p>
+						boltのCodeタブから、<code>style.css</code>
+						ファイルを選択して下さい。
+					</p>
+					<Image src={boltNewCssBefore} alt="boltのCSS画面" />
 
-					<div>
-						<h3>background-color（背景色）</h3>
-						<p>要素の背景色を変更します。</p>
-						<pre>
-							{`.example {
-  background-color: #f0f0f0;
-}`}
-						</pre>
-						<div>この要素の背景色は灰色です。</div>
-					</div>
+					<p>以下のようなソースコードになっています。</p>
+					<CodeBlock
+						lang="css"
+						// biome-ignore format: for code
+						code={[
+							"h1 {",
+							"  color: blue;",
+							"}"
+						].join("\n")}
+					/>
+					<p>CSSは以下のような構造になっています。</p>
+					<CodeBlock
+						lang="css"
+						// biome-ignore format: for code
+						code={[
+							"セレクタ {",
+							"  プロパティ: 値;",
+							"}"
+						].join("\n")}
+					/>
+					<p>
+						セレクタでどのHTML要素にスタイルを適用するかを指定
+						<br />
+						プロパティで適用するスタイルの種類を指定（文字色、サイズ、余白、位置など）
+						<br />
+						値で指定した要素のプロパティにどのようなスタイルを適用するかを指定します。
+					</p>
+					<p>
+						テンプレートでは、h1要素の文字色(color)を青(blue)に変更しています。
+					</p>
+				</section>
 
-					<div>
-						<h3>color（文字色）</h3>
-						<p>テキストの色を変更します。</p>
-						<pre>
-							{`.example {
-  color: #ff0000;
-}`}
-						</pre>
-						<p>このテキストは赤色です。</p>
-					</div>
+				<section>
+					<h2>CSSを書いてみよう</h2>
 
-					<div>
-						<h3>font-size（文字サイズ）</h3>
-						<p>テキストのサイズを変更します。</p>
-						<pre>
-							{`.example {
-  font-size: 20px;
-}`}
-						</pre>
-						<p>このテキストは大きいサイズです。</p>
-					</div>
+					<h3>要素セレクタとクラスセレクタ</h3>
+					<h3>テキストのスタイル</h3>
+					<p>color,font-size,font-weight,font-family,text-align</p>
+					<h3>サイズ、余白</h3>
+					<p>background-color,width,height,border,padding,margin</p>
+					<h3>レイアウト・配置</h3>
+					<p>display,position</p>
+					<p>
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox"
+							external
+						>
+							フレックスボックスの基本概念
+						</LinkAsButton>
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout"
+							external
+						>
+							グリッドレイアウトの基本概念
+						</LinkAsButton>
+					</p>
 				</section>
 
 				<section>
 					<h2>参考資料</h2>
 					<p>
-						CSSについてもっと詳しく知りたい方は、以下のMDN Web
-						Docsを参考にしてください：
+						ここではよく使用するプロパティを抜粋して紹介しました。各CSSプロパティの書き方を忘れた場合や、他のCSSプロパティを知りたい人は以下を参考にして下さい。
 					</p>
 					<LinkAsButton
-						href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference"
+						href="https://developer.mozilla.org/ja/docs/Web/CSS/Properties"
 						external
 					>
-						MDN Web Docs - CSS リファレンス
+						MDN Web Docs - CSS プロパティ
 					</LinkAsButton>
+					<p>こちらも全て覚える必要はないので安心して下さい。</p>
 				</section>
 			</article>
 		</div>
