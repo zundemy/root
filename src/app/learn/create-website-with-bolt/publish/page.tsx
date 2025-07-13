@@ -39,10 +39,7 @@ export default function Page() {
 						<li>
 							<h3>Deployボタンをクリック</h3>
 							<p>画面右上のDeployボタンをクリックしてください。</p>
-							<Image
-								src={boltNewCreated}
-								alt="Bolt.newでサイトを作成した画面"
-							/>
+							<Image src={boltNewCreated} alt="boltでサイトを作成した画面" />
 						</li>
 
 						<li>
@@ -56,10 +53,7 @@ export default function Page() {
 							<p>
 								長い方はNetlifyでアカウントを作成して独自ドメインを登録するなどの設定をするために使用するものです。
 							</p>
-							<Image
-								src={boltNewPublished}
-								alt="Bolt.newでサイトを公開した画面"
-							/>
+							<Image src={boltNewPublished} alt="boltでサイトを公開した画面" />
 						</li>
 
 						<li>

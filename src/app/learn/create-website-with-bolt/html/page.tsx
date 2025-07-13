@@ -1,4 +1,5 @@
 import boltNewHtmlBefore from "@/assets/bolt-new-html-before.png";
+import boltNewMinimalWebTemplate from "@/assets/bolt-new-minimal-web-template.png";
 import htmlElement from "@/assets/html-element.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
 import { CodeBlock } from "@/components/code-block";
@@ -19,6 +20,29 @@ export default function Page() {
 				<h1>HTMLを編集する</h1>
 
 				<section>
+					<h2>テンプレートを使用</h2>
+					<p>
+						今回はHTML,CSS,JavaScriptのみの最小限のプロジェクトで説明するためにテンプレートを用意しました。
+					</p>
+					<p>
+						以下のリンクをクリックすると、テンプレートが適用された状態でboltプロジェクトが作成されます。
+					</p>
+					<p>
+						<LinkAsButton
+							href="https://bolt.new/github.com/zundemy/minimal-web-template"
+							external
+						>
+							https://bolt.new/github.com/zundemy/minimal-web-template
+						</LinkAsButton>
+					</p>
+					<p>以下のような画面になればokです。</p>
+					<Image
+						src={boltNewMinimalWebTemplate}
+						alt="テンプレート適用した画面"
+					/>
+				</section>
+
+				<section>
 					<h2>HTMLとは</h2>
 					<p>
 						HTML（HyperText Markup
@@ -27,10 +51,10 @@ export default function Page() {
 					</p>
 					<Image src={htmlElement} alt="HTML要素" />
 					<p>
-						Bolt.newのCode画面から、<code>index.html</code>
+						boltのCode画面から、<code>index.html</code>
 						ファイルを選択して下さい。
 					</p>
-					<Image src={boltNewHtmlBefore} alt="Bolt.newのHTML画面" />
+					<Image src={boltNewHtmlBefore} alt="boltのHTML画面" />
 				</section>
 
 				<section>

@@ -20,14 +20,14 @@ export default function Page() {
 				<h1>Webサイトを作る</h1>
 
 				<section>
-					<h2>Bolt.newを使ってみよう</h2>
+					<h2>boltを使ってみよう</h2>
 					<p>
-						Bolt.newは、チャットベースの生成AIを使用してアプリ開発が出来るサービスです。
+						boltは、チャットベースの生成AIを使用してアプリ開発が出来るサービスです。
 					</p>
 					<p>
 						AIに命令してWebサイトやWebアプリ、ゲームなどを作成できますが、ソースコードを直接編集することもできます。
 					</p>
-					<Image src={boltNewTop} alt="Bolt.newのトップ画面" />
+					<Image src={boltNewTop} alt="boltのトップ画面" />
 
 					<p>Web開発に興味の"ある"人にとっては</p>
 					<ul>
@@ -54,7 +54,7 @@ export default function Page() {
 					<h2>手順</h2>
 					<ol>
 						<li>
-							<h3>Bolt.newにアクセス</h3>
+							<h3>boltにアクセス</h3>
 							<p>
 								<LinkAsButton href="https://bolt.new" external>
 									https://bolt.new
@@ -67,7 +67,7 @@ export default function Page() {
 							<h3>サンプルプロンプトを実行</h3>
 							<p>
 								以下のプロンプト (生成AIに対する指示)
-								をコピーして、Bolt.newのプロンプト入力欄に貼り付けてください。
+								をコピーして、boltのプロンプト入力欄に貼り付けてください。
 							</p>
 							<CodeBlock
 								lang="md"
@@ -87,7 +87,7 @@ export default function Page() {
 							<p>
 								プロンプトを実行しようとするとアカウント登録ボタンが表示されます。いずれかの方法でアカウント登録してください。
 							</p>
-							<Image src={boltNewSignup} alt="Bolt.newのアカウント登録画面" />
+							<Image src={boltNewSignup} alt="boltのアカウント登録画面" />
 						</li>
 
 						<li>
@@ -98,10 +98,7 @@ export default function Page() {
 							<p>
 								しばらくしてカフェのサイトのプレビューが表示されたら成功です。
 							</p>
-							<Image
-								src={boltNewCreated}
-								alt="Bolt.newでサイトを作成した画面"
-							/>
+							<Image src={boltNewCreated} alt="boltでサイトを作成した画面" />
 							<p>生成AIによってWebサイト</p>
 						</li>
 
@@ -139,7 +136,7 @@ export default function Page() {
 					<h2>注意点</h2>
 					<ul>
 						<li>
-							Bolt.newの無料プランでは1日あたり、1ヶ月あたりの使用量が制限されています。
+							boltの無料プランでは1日あたり、1ヶ月あたりの使用量が制限されています。
 						</li>
 						<li>
 							1ヶ月あたりの制限は最終課題を作成するには十分ですが、1日あたりの制限に引っかかった場合は次の日まで待ってください。

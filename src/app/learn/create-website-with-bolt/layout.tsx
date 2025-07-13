@@ -7,7 +7,7 @@ import { indexItems } from "./index-items";
 export const metadata: Metadata = {
 	title: "boltでWebサイトを作ってみよう",
 	description:
-		"生成AIツールBolt.newを使用してwebサイトを作成してみるチュートリアルです。",
+		"生成AIツールboltを使用してwebサイトを作成してみるチュートリアルです。",
 };
 
 export default async function Layout({
