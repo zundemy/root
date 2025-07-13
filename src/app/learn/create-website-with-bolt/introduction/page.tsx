@@ -17,42 +17,33 @@ export default function Page() {
 
 				<p>
 					生成AIツール<a href="https://bolt.new">bolt</a>
-					を使用してWebサイトを作成 + 公開する方法を学びます。
+					を使用してWebサイトを作成し、インターネットに公開する方法を学びます。
 				</p>
 
 				<section>
-					<h2>授業コンセプト</h2>
-					<p>1年生向けの授業なので、以下のコンセプトで内容を作成しています。</p>
+					<h2>前提知識</h2>
 					<ul>
-						<li>難しい話はしない</li>
-						<li>web業界の仕事に興味を持ってもらう</li>
-						<li>どの学類志望の人でも実践で使える内容にする</li>
+						<li>PCの基本的な操作を理解している</li>
+						<li>プログラミングなどの知識はほとんど無くてok</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>最終課題について</h2>
-					<p>生成AIを使用してWebサイトを作成してください。</p>
-					<p>
-						何のサイトにするかは自由です。例として、以下のサイトを生成AIで作成してみました。
-					</p>
+					<h2>実際に作るもののサンプル</h2>
+					<p>作れるものの一例としてカフェのサイトを作りました。</p>
 					<a
 						href="https://dapper-squirrel-7a7bef.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						課題サンプルサイトへ
+						サンプルのカフェのウェブサイト
 					</a>
-					<Image src={taiwaCoffee} alt="タイワコーヒーのトップ画面" />
+					<Image
+						src={taiwaCoffee}
+						alt="サンプルのカフェのウェブサイトのトップ画面"
+					/>
 
-					<h3>要件</h3>
-					<ul>
-						<li>オリジナルのWebサイトを作成する</li>
-						<li>Webサイトを公開し、URLを発行する</li>
-					</ul>
-					<p>
-						課題はURLをmoodleに提出してください。特に評価して欲しいポイントなどがあればそれも入力してください。
-					</p>
+					<p>準備が出来たら、早速Webサイトを作って行きましょう。</p>
 				</section>
 			</article>
 		</div>
