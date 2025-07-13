@@ -2,7 +2,7 @@ import { LinkAsButton } from "@/components/link-as-button";
 
 export default function Page() {
 	return (
-		<div className="mx-auto max-w-3xl space-y-10 p-5">
+		<div className="mx-auto mt-(--header-height) mb-(--footer-height) max-w-3xl space-y-10 p-5">
 			<section>
 				<p>ソフトウェアエンジニアを目指す大学生向けに情報発信をしています。</p>
 			</section>
