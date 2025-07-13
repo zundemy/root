@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { indexItems } from "./index-items";
 
 export default function Page() {
 	return (
@@ -8,10 +9,7 @@ export default function Page() {
 				<p>生成AIを使用してwebサイトを作成してみましょう。</p>
 			</div>
 			<Button size="lg" className="w-28" asChild>
-				<Link
-					href="/create-website-with-bolt/introduction"
-					className="no-underline"
-				>
+				<Link href={indexItems[0].href} className="no-underline">
 					始める
 				</Link>
 			</Button>

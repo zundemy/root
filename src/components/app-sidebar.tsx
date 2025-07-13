@@ -14,13 +14,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type AppSidebarProps = {
-	menuItems: {
+	indexItems: {
 		label: string;
 		href: string;
 	}[];
 };
 
-export function AppSidebar({ menuItems }: AppSidebarProps) {
+export function AppSidebar({ indexItems }: AppSidebarProps) {
 	const pathname = usePathname();
 	return (
 		<Sidebar
@@ -32,7 +32,7 @@ export function AppSidebar({ menuItems }: AppSidebarProps) {
 					<SidebarGroupLabel>目次</SidebarGroupLabel>
 					<SidebarGroupContent>
 						<SidebarMenu>
-							{menuItems.map((item, number) => (
+							{indexItems.map((item, number) => (
 								<SidebarMenuItem key={item.label}>
 									<SidebarMenuButton asChild isActive={pathname === item.href}>
 										<Link href={item.href}>

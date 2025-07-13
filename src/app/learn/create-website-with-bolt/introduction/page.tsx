@@ -7,7 +7,8 @@ export default function Page() {
 			<h1>やること</h1>
 
 			<p>
-				この授業では、生成AIを使用してWebサイトを作成 + 公開する方法を学びます。
+				生成AIツール<a href="https://bolt.new">bolt</a>を使用してWebサイトを作成
+				+ 公開する方法を学びます。
 			</p>
 
 			<section>
