@@ -146,6 +146,26 @@ export default function Page() {
 						</li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>解説動画</h2>
+					<p>
+						以下の動画で同じ内容を解説しています。もしテキストで分かりにくかった場合はこちらをご覧ください。
+					</p>
+					<p>
+						この動画では`Webサイトを作る`、`Webサイトを公開する`の手順を解説しています。
+					</p>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/VJOuLvZIHqs?si=Q2tPsLJMmSLC0Prz"
+						title="YouTube video player"
+						frameBorder={0}
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerPolicy="strict-origin-when-cross-origin"
+						allowFullScreen
+					/>
+				</section>
 			</article>
 		</div>
 	);
