@@ -23,7 +23,10 @@ type AppSidebarProps = {
 export function AppSidebar({ menuItems }: AppSidebarProps) {
 	const pathname = usePathname();
 	return (
-		<Sidebar>
+		<Sidebar
+			variant="inset"
+			className="fixed top-[calc(var(--header-height)+1px)] h-[calc(100svh-var(--header-height)-var(--footer-height))]"
+		>
 			<SidebarContent>
 				<SidebarGroup>
 					<SidebarGroupLabel>目次</SidebarGroupLabel>
