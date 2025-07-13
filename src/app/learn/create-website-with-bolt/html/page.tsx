@@ -1,4 +1,6 @@
 import boltNewHtmlBefore from "@/assets/bolt-new-html-before.png";
+import boltNewImgShow from "@/assets/bolt-new-img-show.png";
+import boltNewImgUpload from "@/assets/bolt-new-img-upload.png";
 import boltNewMinimalWebTemplate from "@/assets/bolt-new-minimal-web-template.png";
 import htmlElement from "@/assets/html-element.png";
 import { AppBreadcrumb } from "@/components/app-breadcrumb";
@@ -170,108 +172,177 @@ export default function Page() {
 
 				<section>
 					<h2>HTMLを書いてみよう</h2>
-					<h3>見出しと段落</h3>
+
 					<p>
-						見出しと段落を追加してみましょう。bodyタグの中に以下のコードを追加してください。
+						ここから実際に<code>index.html</code>を編集してみましょう。
 					</p>
+
+					<h3>見出し</h3>
+					<p>Webページの見出しは&lt;h1&gt;-&lt;h6&gt;で表します。</p>
+					<p>以下のコードをbodyタグの中に書いてみましょう。</p>
 					<CodeBlock
 						lang="html"
 						code={[
-							"<h2>自己紹介</h2>",
-							"<p>こんにちは！私はWeb開発を勉強しています。</p>",
-							"<p>HTMLを使って、自分のホームページを作成しています。</p>",
+							"<h1>1番目に大きな見出し</h1>",
+							"<h2>2番目に大きな見出し</h2>",
+							"<h3>3番目に大きな見出し</h3>",
+							"<h4>4番目に大きな見出し</h4>",
+							"<h5>5番目に大きな見出し</h5>",
+							"<h6>6番目に大きな見出し</h6>",
 						].join("\n")}
 					/>
-				</section>
-
-				<section>
-					<h2>リンクの追加</h2>
-					<p>他のページへのリンクを追加してみましょう。</p>
-					<CodeBlock
-						lang="html"
-						code={[
-							"<h2>お気に入りのサイト</h2>",
-							"<p>以下のサイトがおすすめです：</p>",
-							'<a href="https://example.com" target="_blank">サンプルサイト</a>',
-						].join("\n")}
-					/>
-				</section>
-
-				<section>
-					<h2>画像の追加</h2>
+					<p>h1が1番大きい見出しで、h6が1番小さい見出しです。</p>
+					<p>hはHeadingのhです。</p>
 					<p>
-						画像を追加してみましょう。publicフォルダに画像を配置して、以下のコードを追加してください。
+						参考 :
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/Heading_Elements"
+							external
+						>
+							&lt;h1&gt;-&lt;h6&gt;: HTML の見出し要素
+						</LinkAsButton>
 					</p>
+
+					<h3>段落</h3>
+					<p>Webページの見出しは&lt;h1&gt;-&lt;h6&gt;で表します。</p>
+					<p>以下のコードをbodyタグの中に書いてみましょう。</p>
 					<CodeBlock
 						lang="html"
 						code={[
-							"<h2>プロフィール画像</h2>",
-							'<img src="/profile.jpg" alt="プロフィール画像" width="200">',
+							"<p>これはテキストの最初の段落です。これはテキストの最初の段落です。これはテキストの最初の段落です。これはテキストの最初の段落です。</p>",
+							"<p>これはテキストの二番目の段落です。これはテキストの二番目の段落です。これはテキストの二番目の段落です。これはテキストの二番目の段落です。</p>",
 						].join("\n")}
 					/>
-				</section>
+					<p>段落が分かれると改行されます。</p>
+					<p>pはParagraphのpです。</p>
+					<p>
+						参考 :
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/p"
+							external
+						>
+							&lt;p&gt;: 段落要素
+						</LinkAsButton>
+					</p>
 
-				<section>
-					<h2>リストの作成</h2>
+					<h3>リスト</h3>
 					<p>順序付きリストと順序なしリストを作成してみましょう。</p>
 					<CodeBlock
 						lang="html"
 						code={[
-							"<h2>趣味</h2>",
-							"<ul>",
-							"  <li>プログラミング</li>",
-							"  <li>読書</li>",
-							"  <li>旅行</li>",
-							"</ul>",
-							"",
 							"<h2>今日の予定</h2>",
 							"<ol>",
 							"  <li>朝食を食べる</li>",
 							"  <li>HTMLの勉強</li>",
 							"  <li>散歩に行く</li>",
 							"</ol>",
+							"",
+							"<h2>趣味</h2>",
+							"<ul>",
+							"  <li>プログラミング</li>",
+							"  <li>読書</li>",
+							"  <li>旅行</li>",
+							"</ul>",
 						].join("\n")}
 					/>
-				</section>
+					<p>
+						olはOrdered List（順序付きリスト）、ulはUnordered
+						List（順序なしリスト）です。
+					</p>
+					<p>リストの各項目はliタグを使用します、liはList Itemです。</p>
+					<p>参考</p>
+					<ul>
+						<li>
+							<LinkAsButton
+								href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/ol"
+								external
+							>
+								&lt;ol&gt;: 順序付きリスト要素
+							</LinkAsButton>
+						</li>
+						<li>
+							<LinkAsButton
+								href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/ul"
+								external
+							>
+								&lt;ul&gt;: 順序なしリスト要素
+							</LinkAsButton>
+						</li>
+						<li>
+							<LinkAsButton
+								href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/li"
+								external
+							>
+								&lt;li&gt;: リストアイテム要素
+							</LinkAsButton>
+						</li>
+					</ul>
 
-				<section>
-					<h2>フォームの作成</h2>
-					<p>ユーザーからの入力を受け取るフォームを作成してみましょう。</p>
+					<h3>リンク</h3>
+					<p>他のページへのリンクを追加してみましょう。</p>
 					<CodeBlock
 						lang="html"
-						code={[
-							"<h2>お問い合わせ</h2>",
-							"<form>",
-							"  <div>",
-							'    <label for="name">お名前：</label>',
-							'    <input type="text" id="name" name="name">',
-							"  </div>",
-							"  <div>",
-							'    <label for="email">メールアドレス：</label>',
-							'    <input type="email" id="email" name="email">',
-							"  </div>",
-							"  <div>",
-							'    <label for="message">メッセージ：</label>',
-							'    <textarea id="message" name="message"></textarea>',
-							"  </div>",
-							'  <button type="submit">送信</button>',
-							"</form>",
-						].join("\n")}
+						code='<a href="https://google.com">サンプルサイト</a>'
 					/>
+					<p>
+						HTML要素は<code>href="https://google.com"</code>のように属性
+						(Attribute) を持つこともできます。
+					</p>
+					<p>
+						aタグの場合はhref属性にURLを指定することでリンクを追加することができます。
+					</p>
+					<p>aはAnchorのaです。</p>
+					<p>
+						参考 :
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/a"
+							external
+						>
+							&lt;a&gt;: アンカー要素
+						</LinkAsButton>
+					</p>
+
+					<h3>画像</h3>
+					<p>
+						画像を追加してみましょう。publicフォルダに画像を配置して、以下のコードを追加してください。
+					</p>
+					<CodeBlock
+						lang="html"
+						code='<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" />'
+					/>
+					<p>
+						src属性に画像のリンク、alt属性に画像がロード出来なかった場合の代替テキストを指定します。
+					</p>
+					<p>正しく追加すると、Firefoxのログが表示されます。</p>
+					<p>
+						自分のPCから画像をアップロードして表示することもできます。以下のようにboltのFilesエリアに画像をドラッグ&ドロップして下さい。
+					</p>
+					<Image src={boltNewImgUpload} alt="boltに画像をアップロード" />
+					<p>
+						src属性にアップロードした画像のファイル名を指定すると表示されます。
+					</p>
+					<CodeBlock
+						lang="html"
+						code='<img src="firefox-icon.png" alt="Firefox icon" />'
+					/>
+					<Image src={boltNewImgShow} alt="boltで画像表示" />
 				</section>
 
 				<section>
 					<h2>参考資料</h2>
 					<p>
-						HTMLについてもっと詳しく知りたい方は、以下のMDN Web
-						Docsを参考にしてください：
+						ここではよく使用するタグを抜粋して紹介しました。各HTMLタグの書き方を忘れた場合や、他のHTMLタグを知りたい人は以下を参考にして下さい。
 					</p>
 					<LinkAsButton
-						href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference"
+						href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements"
 						external
 					>
-						MDN Web Docs - HTML リファレンス
+						MDN Web Docs - HTML 要素リファレンス
 					</LinkAsButton>
+					<p>
+						たくさんあってびっくりするかもしれませんが、エンジニアでも全て覚えていないので安心して下さい。
+					</p>
+					<p>ひとまずはここで紹介したものを押さえて貰えばokです。</p>
 				</section>
 			</article>
 		</div>
