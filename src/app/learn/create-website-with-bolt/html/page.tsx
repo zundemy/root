@@ -326,6 +326,15 @@ export default function Page() {
 						code='<img src="firefox-icon.png" alt="Firefox icon" />'
 					/>
 					<Image src={boltNewImgShow} alt="boltで画像表示" />
+					<p>
+						参考 :
+						<LinkAsButton
+							href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/img"
+							external
+						>
+							&lt;img&gt;: 画像埋め込み要素
+						</LinkAsButton>
+					</p>
 				</section>
 
 				<section>
