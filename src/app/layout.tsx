@@ -6,6 +6,9 @@ import "./globals.css";
 export const metadata: Metadata = {
 	title: "Zundemy",
 	description: "ソフトウェア開発に興味のある学生向けの学習リソースです。",
+	other: {
+		"google-adsense-account": "ca-pub-9191403506411578",
+	},
 };
 
 export default async function RootLayout({
